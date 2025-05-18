@@ -1,4 +1,4 @@
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 1 - 1
 
 
@@ -95,7 +95,7 @@ z80em.asm						     Page 1 - 1
  = dl				temp_l		equ	dl
  = cx				BC		equ	cx
  = bp				DE		equ	bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 2 - 1
 
 
@@ -161,7 +161,7 @@ z80em.asm						     Page 2 - 1
  00E0				entry:
  00E0  8B EA					mov	bp,temp
  00E2  FC					cld
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 3 - 1
 
 
@@ -227,7 +227,7 @@ z80em.asm						     Page 3 - 1
 						dec	src
 						fetch1
 				endm
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 4 - 1
 
 
@@ -293,7 +293,7 @@ z80em.asm						     Page 4 - 1
 				endm
 
 				;--- ADD HL,reg16
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 5 - 1
 
 
@@ -359,7 +359,7 @@ z80em.asm						     Page 5 - 1
 				endm
 
 				;--- ADD A,reg8
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 6 - 1
 
 
@@ -425,7 +425,7 @@ z80em.asm						     Page 6 - 1
 
 				elseifidni	src,temp_l
 
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 7 - 1
 
 
@@ -491,7 +491,7 @@ z80em.asm						     Page 7 - 1
 						lahf
 						and	ah,not(n_flag or c_flag)
 						or	ah,h_flag
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 8 - 1
 
 
@@ -557,7 +557,7 @@ z80em.asm						     Page 8 - 1
 						cmp	A,src
 				endif
 						lahf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 9 - 1
 
 
@@ -623,7 +623,7 @@ z80em.asm						     Page 9 - 1
 				ifidni		src,AF
 						xchg	ah,al
 						mov	ds:[SP80],src
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 10 - 1
 
 
@@ -689,7 +689,7 @@ z80em.asm						     Page 10 - 1
  0206  8B FA					mov	di,temp
  0208  B2 00					mov	temp_l,0
 						fetch1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 11 - 1
 
 
@@ -755,7 +755,7 @@ z80em.asm						     Page 11 - 1
 
 				M1	07				;RLCA
  = 0008			     1		op2	= 07 + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 12 - 1
 
 
@@ -821,7 +821,7 @@ z80em.asm						     Page 12 - 1
  0C00  9E		     1			sahf
  0C01  FE C1		     1			inc	C_reg
  0C03  9F		     1			lahf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 13 - 1
 
 
@@ -887,7 +887,7 @@ z80em.asm						     Page 13 - 1
  100A  8B D0			@@:		mov	temp,ax
  100C  AC					lodsb
  100D  98					cbw
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 14 - 1
 
 
@@ -953,7 +953,7 @@ z80em.asm						     Page 14 - 1
 				M1	15H				;DEC	D
  = 0016			     1		op2	= 15H + 1
 						DCR	D
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 15 - 1
 
 
@@ -1019,7 +1019,7 @@ z80em.asm						     Page 15 - 1
  1909  8A 34		     2			mov	temp_h,ds:[PC80]
  190B  46		     2			inc	PC80
  190C  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 16 - 1
 
 
@@ -1085,7 +1085,7 @@ z80em.asm						     Page 16 - 1
  1D19  46		     2			inc	PC80
  1D1A  FF E2		     2			jmp	temp
 
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 17 - 1
 
 
@@ -1151,7 +1151,7 @@ z80em.asm						     Page 17 - 1
  220A  8A 74 02		     1			mov	temp_h,ds:[PC80+2]
  220D  83 C6 03		     1			add	PC80,3
  2210  FF E2		     1			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 18 - 1
 
 
@@ -1217,7 +1217,7 @@ z80em.asm						     Page 18 - 1
 						fetch1
  270B  8A 34		     1			mov	temp_h,ds:[PC80]
  270D  46		     1			inc	PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 19 - 1
 
 
@@ -1283,7 +1283,7 @@ z80em.asm						     Page 19 - 1
 						INR	L
  2C00  9E		     1			sahf
  2C01  FE C3		     1			inc	L
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 20 - 1
 
 
@@ -1349,7 +1349,7 @@ z80em.asm						     Page 20 - 1
  300D  03 F0		     1			add	PC80,ax
  300F  8B C2		     1			mov	ax,temp
  3011  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 21 - 1
 
 
@@ -1415,7 +1415,7 @@ z80em.asm						     Page 21 - 1
  350C  FF E2		     2			jmp	temp
  350E  80 CC 06		     1	@@:		or	ah,(v_flag or n_flag)
  3511  8A 34		     2			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 22 - 1
 
 
@@ -1481,7 +1481,7 @@ z80em.asm						     Page 22 - 1
  3A08  B2 00					mov	temp_l,0
 						fetch3
  3A0A  8A 74 02		     1			mov	temp_h,ds:[PC80+2]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 23 - 1
 
 
@@ -1547,7 +1547,7 @@ z80em.asm						     Page 23 - 1
  3F08  46		     1			inc	PC80
  3F09  FF E2		     1			jmp	temp
 				;--------------------------------------
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 24 - 1
 
 
@@ -1613,7 +1613,7 @@ z80em.asm						     Page 24 - 1
 
 				M1	48H
  = 0049			     1		op2	= 48H + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 25 - 1
 
 
@@ -1679,7 +1679,7 @@ z80em.asm						     Page 25 - 1
  = 0051			     1		op2	= 50H + 1
 						LD	D,B
  5000  8B D5		     1			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 26 - 1
 
 
@@ -1745,7 +1745,7 @@ z80em.asm						     Page 26 - 1
  5608  8A 34		     2			mov	temp_h,ds:[PC80]
  560A  46		     2			inc	PC80
  560B  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 27 - 1
 
 
@@ -1811,7 +1811,7 @@ z80em.asm						     Page 27 - 1
 						LD	E,L
  5D00  8B D5		     1			mov	temp,bp
  5D02  8A D3		     1			mov	E,L
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 28 - 1
 
 
@@ -1877,7 +1877,7 @@ z80em.asm						     Page 28 - 1
  = 0065			     1		op2	= 64H + 1
 						LD	H,H
  6400  8A 34		     2			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 29 - 1
 
 
@@ -1943,7 +1943,7 @@ z80em.asm						     Page 29 - 1
  6C00  8A DF		     1			mov	L,H
  6C02  8A 34		     2			mov	temp_h,ds:[PC80]
  6C04  46		     2			inc	PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 30 - 1
 
 
@@ -2010,7 +2010,7 @@ z80em.asm						     Page 30 - 1
  7404  46		     2			inc	PC80
  7405  FF E2		     2			jmp	temp
 				M1	75H
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 31 - 1
 
 
@@ -2076,7 +2076,7 @@ z80em.asm						     Page 31 - 1
  = 007E			     1		op2	= 7DH + 1
 						LD	A,L
  7D00  8A C3		     1			mov	A,L
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 32 - 1
 
 
@@ -2143,7 +2143,7 @@ z80em.asm						     Page 32 - 1
  8211  80 E4 FD		     1	@@:		and	ah,not n_flag
  8214  80 CC 04		     1			or	ah,v_flag
  8217  8A 34		     2			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 33 - 1
 
 
@@ -2209,7 +2209,7 @@ z80em.asm						     Page 33 - 1
  860D  80 E4 FD		     1	@@:		and	ah,not n_flag
  8610  80 CC 04		     1			or	ah,v_flag
  8613  8A 34		     2			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 34 - 1
 
 
@@ -2275,7 +2275,7 @@ z80em.asm						     Page 34 - 1
  8A0A  80 E4 F9		     1			and	ah,not (v_flag or n_flag)
  8A0D  8A 34		     2			mov	temp_h,ds:[PC80]
  8A0F  46		     2			inc	PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 35 - 1
 
 
@@ -2341,7 +2341,7 @@ z80em.asm						     Page 35 - 1
  8E00  9E		     1			sahf
  8E01  12 07		     1			adc	A,M
  8E03  9F		     1			lahf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 36 - 1
 
 
@@ -2407,7 +2407,7 @@ z80em.asm						     Page 36 - 1
  9202  2A C6		     1			sub	A,D
  9204  B2 00		     1			mov	temp_l,0
  9206  9F		     1			lahf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 37 - 1
 
 
@@ -2473,7 +2473,7 @@ z80em.asm						     Page 37 - 1
  9605  80 E4 FB		     1			and	ah,not(v_flag)
  9608  8A 34		     2			mov	temp_h,ds:[PC80]
  960A  46		     2			inc	PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 38 - 1
 
 
@@ -2539,7 +2539,7 @@ z80em.asm						     Page 38 - 1
  9A0A  80 E4 FB		     1			and	ah,not(v_flag)
  9A0D  8A 34		     2			mov	temp_h,ds:[PC80]
  9A0F  46		     2			inc	PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 39 - 1
 
 
@@ -2605,7 +2605,7 @@ z80em.asm						     Page 39 - 1
  9E06  80 E4 FB		     1			and	ah,not(v_flag)
  9E09  8A 34		     2			mov	temp_h,ds:[PC80]
  9E0B  46		     2			inc	PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 40 - 1
 
 
@@ -2671,7 +2671,7 @@ z80em.asm						     Page 40 - 1
  A306  9F		     1			lahf
  A307  80 E4 FC		     1			and	ah,not(n_flag or c_flag)
  A30A  80 CC 10		     1			or	ah,h_flag
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 41 - 1
 
 
@@ -2738,7 +2738,7 @@ z80em.asm						     Page 41 - 1
  A906  8A 34		     2			mov	temp_h,ds:[PC80]
  A908  46		     2			inc	PC80
  A909  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 42 - 1
 
 
@@ -2804,7 +2804,7 @@ z80em.asm						     Page 42 - 1
 				M1	0B0H
  = 00B1			     1		op2	= 0B0H + 1
 						ORA	B
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 43 - 1
 
 
@@ -2870,7 +2870,7 @@ z80em.asm						     Page 43 - 1
  B602  9F		     1			lahf
  B603  80 E4 EC		     1			and	ah,not(h_flag or n_flag or c_flag)
  B606  8A 34		     2			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 44 - 1
 
 
@@ -2936,7 +2936,7 @@ z80em.asm						     Page 44 - 1
  BB00  8B D5		     1			mov	temp,bp
  BB02  3A C2		     1			cmp	A,E
  BB04  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 45 - 1
 
 
@@ -3002,7 +3002,7 @@ z80em.asm						     Page 45 - 1
  BF08  8A 34		     2			mov	temp_h,ds:[PC80]
  BF0A  46		     2			inc	PC80
  BF0B  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 46 - 1
 
 
@@ -3068,7 +3068,7 @@ z80em.asm						     Page 46 - 1
  C409  FF E2		     2			jmp	temp
  C40B			     1	@@:
  C40B  83 EF 02		     1			sub	SP80,2
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 47 - 1
 
 
@@ -3134,7 +3134,7 @@ z80em.asm						     Page 47 - 1
 				M1	0C9H
  = 00CA			     1		op2	= 0C9H + 1
 						RET80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 48 - 1
 
 
@@ -3200,7 +3200,7 @@ z80em.asm						     Page 48 - 1
  CE03  9F					lahf
  CE04  70 09					jo	@f
  CE06  80 E4 F9					and	ah,not (v_flag or n_flag)
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 49 - 1
 
 
@@ -3266,7 +3266,7 @@ z80em.asm						     Page 49 - 1
  D210  FF E2		     2			jmp	temp
 
 				M1	0D3H				;OUT	(n),A
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 50 - 1
 
 
@@ -3332,7 +3332,7 @@ z80em.asm						     Page 50 - 1
 
 				M1	0D8H
  = 00D9			     1		op2	= 0D8H + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 51 - 1
 
 
@@ -3398,7 +3398,7 @@ z80em.asm						     Page 51 - 1
 
 				M1	0DDH
  = 00DE			     1		op2	= 0DDH + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 52 - 1
 
 
@@ -3464,7 +3464,7 @@ z80em.asm						     Page 52 - 1
 				M1	0E2H
  = 00E3			     1		op2	= 0E2H + 1
 						JP80	PO
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 53 - 1
 
 
@@ -3530,7 +3530,7 @@ z80em.asm						     Page 53 - 1
 						RST	20h
  E700  83 EF 02		     1			sub	SP80,2
  E703  89 35		     1			mov	ds:[SP80],PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 54 - 1
 
 
@@ -3596,7 +3596,7 @@ z80em.asm						     Page 54 - 1
  EC0B			     1	@@:
  EC0B  83 EF 02		     1			sub	SP80,2
  EC0E  89 35		     1			mov	ds:[SP80],PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 55 - 1
 
 
@@ -3662,7 +3662,7 @@ z80em.asm						     Page 55 - 1
  = 00F3			     1		op2	= 0F2H + 1
 						JP80	ns		;JP	P,nn
  F200  9E		     1			sahf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 56 - 1
 
 
@@ -3728,7 +3728,7 @@ z80em.asm						     Page 56 - 1
 						RST	30h
  F700  83 EF 02		     1			sub	SP80,2
  F703  89 35		     1			mov	ds:[SP80],PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 57 - 1
 
 
@@ -3794,7 +3794,7 @@ z80em.asm						     Page 57 - 1
  FC0B			     1	@@:
  FC0B  83 EF 02		     1			sub	SP80,2
  FC0E  89 35		     1			mov	ds:[SP80],PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 58 - 1
 
 
@@ -3860,7 +3860,7 @@ z80em.asm						     Page 58 - 1
 				RLC		macro	src
 
 				ifidni		src,M
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 59 - 1
 
 
@@ -3926,7 +3926,7 @@ z80em.asm						     Page 59 - 1
 						and	temp_h,c_flag
 						and	temp_l,temp_l
 						lahf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 60 - 1
 
 
@@ -3992,7 +3992,7 @@ z80em.asm						     Page 60 - 1
 
 				elseifidni	src,temp_h
 
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 61 - 1
 
 
@@ -4058,7 +4058,7 @@ z80em.asm						     Page 61 - 1
 						mov	bp,temp
 						lahf
 						mov	temp_l,ah
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 62 - 1
 
 
@@ -4124,7 +4124,7 @@ z80em.asm						     Page 62 - 1
 						mov	temp,bp
 						sar	src,1
 						mov	bp,temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 63 - 1
 
 
@@ -4190,7 +4190,7 @@ z80em.asm						     Page 63 - 1
 						rcl	temp_l,1
 						lahf
 						mov	temp_h,ah
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 64 - 1
 
 
@@ -4256,7 +4256,7 @@ z80em.asm						     Page 64 - 1
 
 						mov	temp,bp
 						and	src,not (1 shl n)
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 65 - 1
 
 
@@ -4322,7 +4322,7 @@ z80em.asm						     Page 65 - 1
  0132  8A 34		     2			mov	temp_h,ds:[PC80]
  0134  46		     2			inc	PC80
  0135  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 66 - 1
 
 
@@ -4388,7 +4388,7 @@ z80em.asm						     Page 66 - 1
  052E  0A E6		     1			or	ah,temp_h
  0530  B2 00		     1			mov	temp_l,0
  0532  8A 34		     2			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 67 - 1
 
 
@@ -4454,7 +4454,7 @@ z80em.asm						     Page 67 - 1
  092B  80 E4 EC		     1			and	ah,not (h_flag or n_flag or c_flag)
  092E  0A E6		     1			or	ah,temp_h
  0930  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 68 - 1
 
 
@@ -4520,7 +4520,7 @@ z80em.asm						     Page 68 - 1
  0D28  22 DB		     1			and	L,L
  0D2A  9F		     1			lahf
  0D2B  80 E4 EC		     1			and	ah,not (h_flag or n_flag or c_flag)
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 69 - 1
 
 
@@ -4586,7 +4586,7 @@ z80em.asm						     Page 69 - 1
  1123  9F		     1			lahf
  1124  8A F4		     1			mov	temp_h,ah
  1126  80 E6 01		     1			and	temp_h,c_flag
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 70 - 1
 
 
@@ -4652,7 +4652,7 @@ z80em.asm						     Page 70 - 1
  1436  FF E2		     2			jmp	temp
 				CB	15H
  = 0016			     1		op2	= 15H + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 71 - 1
 
 
@@ -4718,7 +4718,7 @@ z80em.asm						     Page 71 - 1
  182C  80 E4 EC		     1			and	ah,not (h_flag or n_flag or c_flag)
  182F  0A E6		     1			or	ah,temp_h
  1831  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 72 - 1
 
 
@@ -4784,7 +4784,7 @@ z80em.asm						     Page 72 - 1
  1C21  D0 DF		     1			rcr	H,1
  1C23  9F		     1			lahf
  1C24  8A F4		     1			mov	temp_h,ah
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 73 - 1
 
 
@@ -4850,7 +4850,7 @@ z80em.asm						     Page 73 - 1
 
 				CB	20H
  = 0021			     1		op2	= 20H + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 74 - 1
 
 
@@ -4916,7 +4916,7 @@ z80em.asm						     Page 74 - 1
  2528  8A 34		     2			mov	temp_h,ds:[PC80]
  252A  46		     2			inc	PC80
  252B  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 75 - 1
 
 
@@ -4982,7 +4982,7 @@ z80em.asm						     Page 75 - 1
  2B26  9F		     1			lahf
  2B27  80 E4 ED		     1			and	ah,not (h_flag or n_flag)
  2B2A  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 76 - 1
 
 
@@ -5048,7 +5048,7 @@ z80em.asm						     Page 76 - 1
  3036  FF E2		     2			jmp	temp
 				CB	31H
  = 0032			     1		op2	= 31H + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 77 - 1
 
 
@@ -5114,7 +5114,7 @@ z80em.asm						     Page 77 - 1
  342B  9F		     1			lahf
  342C  80 E4 EC		     1			and	ah,not (h_flag or n_flag or c_flag)
  342F  0A E6		     1			or	ah,temp_h
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 78 - 1
 
 
@@ -5180,7 +5180,7 @@ z80em.asm						     Page 78 - 1
  3822  9F		     1			lahf
  3823  80 E4 ED		     1			and	ah,not (h_flag or n_flag)
  3826  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 79 - 1
 
 
@@ -5246,7 +5246,7 @@ z80em.asm						     Page 79 - 1
 						SRL	M
  3E20  D0 2F		     1			shr	M,1
  3E22  9F		     1			lahf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 80 - 1
 
 
@@ -5312,7 +5312,7 @@ z80em.asm						     Page 80 - 1
 				CB	43H
  = 0044			     1		op2	= 43H + 1
 						BIT	0,E
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 81 - 1
 
 
@@ -5378,7 +5378,7 @@ z80em.asm						     Page 81 - 1
  4724  9F		     1			lahf
  4725  80 E6 85		     1			and	temp_h,(s_flag or p_flag or c_flag)
  4728  80 E4 40		     1			and	ah,z_flag
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 82 - 1
 
 
@@ -5444,7 +5444,7 @@ z80em.asm						     Page 82 - 1
  4B2E  80 CE 10		     1			or	temp_h,h_flag
  4B31  0A E6		     1			or	ah,temp_h
  4B33  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 83 - 1
 
 
@@ -5510,7 +5510,7 @@ z80em.asm						     Page 83 - 1
 
 				CB	50H
  = 0051			     1		op2	= 50H + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 84 - 1
 
 
@@ -5576,7 +5576,7 @@ z80em.asm						     Page 84 - 1
  5420  F6 C7 04		     1			test	H,1 shl 2
  5423  8A F4		     1			mov	temp_h,ah
  5425  9F		     1			lahf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 85 - 1
 
 
@@ -5642,7 +5642,7 @@ z80em.asm						     Page 85 - 1
  582C  80 CE 10		     1			or	temp_h,h_flag
  582F  0A E6		     1			or	ah,temp_h
  5831  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 86 - 1
 
 
@@ -5708,7 +5708,7 @@ z80em.asm						     Page 86 - 1
  5C35  46		     2			inc	PC80
  5C36  FF E2		     2			jmp	temp
 				CB	5dH
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 87 - 1
 
 
@@ -5774,7 +5774,7 @@ z80em.asm						     Page 87 - 1
  6120  F6 C1 10		     1			test	C_reg,1 shl 4
  6123  8A F4		     1			mov	temp_h,ah
  6125  9F		     1			lahf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 88 - 1
 
 
@@ -5840,7 +5840,7 @@ z80em.asm						     Page 88 - 1
  6529  80 E4 40		     1			and	ah,z_flag
  652C  80 CE 10		     1			or	temp_h,h_flag
  652F  0A E6		     1			or	ah,temp_h
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 89 - 1
 
 
@@ -5906,7 +5906,7 @@ z80em.asm						     Page 89 - 1
  6935  46		     2			inc	PC80
  6936  FF E2		     2			jmp	temp
 				CB	6aH
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 90 - 1
 
 
@@ -5972,7 +5972,7 @@ z80em.asm						     Page 90 - 1
 						BIT	5,M
  6E20  F6 07 20		     1			test	M,1 shl 5
  6E23  8A F4		     1			mov	temp_h,ah
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 91 - 1
 
 
@@ -6038,7 +6038,7 @@ z80em.asm						     Page 91 - 1
  7228  80 E6 85		     1			and	temp_h,(s_flag or p_flag or c_flag)
  722B  80 E4 40		     1			and	ah,z_flag
  722E  80 CE 10		     1			or	temp_h,h_flag
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 92 - 1
 
 
@@ -6104,7 +6104,7 @@ z80em.asm						     Page 92 - 1
  7633  8A 34		     2			mov	temp_h,ds:[PC80]
  7635  46		     2			inc	PC80
  7636  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 93 - 1
 
 
@@ -6170,7 +6170,7 @@ z80em.asm						     Page 93 - 1
  = 007C			     1		op2	= 7bH + 1
 						BIT	7,E
  7B20  8B D5		     1			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 94 - 1
 
 
@@ -6236,7 +6236,7 @@ z80em.asm						     Page 94 - 1
  7F25  80 E6 85		     1			and	temp_h,(s_flag or p_flag or c_flag)
  7F28  80 E4 40		     1			and	ah,z_flag
  7F2B  80 CE 10		     1			or	temp_h,h_flag
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 95 - 1
 
 
@@ -6302,7 +6302,7 @@ z80em.asm						     Page 95 - 1
  = 0087			     1		op2	= 86H + 1
 						RES	0,M
  8620  80 27 FE		     1			and	M,not (1 shl 0)
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 96 - 1
 
 
@@ -6368,7 +6368,7 @@ z80em.asm						     Page 96 - 1
 						RES	1,L
  8D20  80 E3 FD		     1			and	L,not (1 shl 1)
  8D23  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 97 - 1
 
 
@@ -6434,7 +6434,7 @@ z80em.asm						     Page 97 - 1
  9420  80 E7 FB		     1			and	H,not (1 shl 2)
  9423  B2 00		     1			mov	temp_l,0
  9425  8A 34		     2			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 98 - 1
 
 
@@ -6500,7 +6500,7 @@ z80em.asm						     Page 98 - 1
  9B27  B2 00		     1			mov	temp_l,0
  9B29  8A 34		     2			mov	temp_h,ds:[PC80]
  9B2B  46		     2			inc	PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 99 - 1
 
 
@@ -6566,7 +6566,7 @@ z80em.asm						     Page 99 - 1
  A22C  FF E2		     2			jmp	temp
 				CB	0a3H
  = 00A4			     1		op2	= 0a3H + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 100 - 1
 
 
@@ -6632,7 +6632,7 @@ z80em.asm						     Page 100 - 1
 						RES	5,D
  AA20  8B D5		     1			mov	temp,bp
  AA22  80 E6 DF		     1			and	D,not (1 shl 5)
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 101 - 1
 
 
@@ -6698,7 +6698,7 @@ z80em.asm						     Page 101 - 1
  B120  80 E1 BF		     1			and	C_reg,not (1 shl 6)
  B123  B2 00		     1			mov	temp_l,0
  B125  8A 34		     2			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 102 - 1
 
 
@@ -6764,7 +6764,7 @@ z80em.asm						     Page 102 - 1
  B823  B2 00		     1			mov	temp_l,0
  B825  8A 34		     2			mov	temp_h,ds:[PC80]
  B827  46		     2			inc	PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 103 - 1
 
 
@@ -6830,7 +6830,7 @@ z80em.asm						     Page 103 - 1
  BF26  46		     2			inc	PC80
  BF27  FF E2		     2			jmp	temp
 				;--------------------------------------
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 104 - 1
 
 
@@ -6896,7 +6896,7 @@ z80em.asm						     Page 104 - 1
  C628  FF E2		     2			jmp	temp
 				CB	0c7H
  = 00C8			     1		op2	= 0c7H + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 105 - 1
 
 
@@ -6962,7 +6962,7 @@ z80em.asm						     Page 105 - 1
 				CB	0ceH
  = 00CF			     1		op2	= 0ceH + 1
 						SET	1,M
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 106 - 1
 
 
@@ -7028,7 +7028,7 @@ z80em.asm						     Page 106 - 1
  = 00D6			     1		op2	= 0d5H + 1
 						SET	2,L
  D520  80 CB 04		     1			or	L,1 shl 2
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 107 - 1
 
 
@@ -7094,7 +7094,7 @@ z80em.asm						     Page 107 - 1
 						SET	3,H
  DC20  80 CF 08		     1			or	H,1 shl 3
  DC23  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 108 - 1
 
 
@@ -7160,7 +7160,7 @@ z80em.asm						     Page 108 - 1
  E325  8B EA		     1			mov	bp,temp
  E327  B2 00		     1			mov	temp_l,0
  E329  8A 34		     2			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 109 - 1
 
 
@@ -7226,7 +7226,7 @@ z80em.asm						     Page 109 - 1
  EA2B  46		     2			inc	PC80
  EA2C  FF E2		     2			jmp	temp
 				CB	0ebH
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 110 - 1
 
 
@@ -7292,7 +7292,7 @@ z80em.asm						     Page 110 - 1
  = 00F3			     1		op2	= 0f2H + 1
 						SET	6,D
  F220  8B D5		     1			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 111 - 1
 
 
@@ -7358,7 +7358,7 @@ z80em.asm						     Page 111 - 1
 						SET	7,C_reg
  F920  80 C9 80		     1			or	C_reg,1 shl 7
  F923  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 112 - 1
 
 
@@ -7424,7 +7424,7 @@ z80em.asm						     Page 112 - 1
 
  = 0000				op2	=	0
 
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 113 - 1
 
 
@@ -7490,7 +7490,7 @@ z80em.asm						     Page 113 - 1
  0659  8A 34		     1			mov	temp_h,ds:[PC80]
  065B  46		     1			inc	PC80
  065C  FF E2		     1			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 114 - 1
 
 
@@ -7556,7 +7556,7 @@ z80em.asm						     Page 114 - 1
  0F45  BD 0006		     2			mov	bp,code_undef4
  0F48  CB		     2			retf
  = 0010			     2		op2	= op2 + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 115 - 1
 
 
@@ -7622,7 +7622,7 @@ z80em.asm						     Page 115 - 1
  1848  CB		     2			retf
  = 0019			     2		op2	= op2 + 1
  1940  83 C4 02		     2			add	sp,2
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 116 - 1
 
 
@@ -7688,7 +7688,7 @@ z80em.asm						     Page 116 - 1
  = 0022			     2		op2	= op2 + 1
  2240  83 C4 02		     2			add	sp,2
  2243  8B D5		     2			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 117 - 1
 
 
@@ -7754,7 +7754,7 @@ z80em.asm						     Page 117 - 1
  2C45  BD 0006		     2			mov	bp,code_undef4
  2C48  CB		     2			retf
  = 002D			     2		op2	= op2 + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 118 - 1
 
 
@@ -7820,7 +7820,7 @@ z80em.asm						     Page 118 - 1
  3646  9F					lahf
  3647  8A 1F					mov	bl,byte ptr ds:[bx]
  3649  8A FC					mov	bh,ah
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 119 - 1
 
 
@@ -7886,7 +7886,7 @@ z80em.asm						     Page 119 - 1
  3E50  FF E2		     1			jmp	temp
 
 				;-----------------------------------
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 120 - 1
 
 
@@ -7952,7 +7952,7 @@ z80em.asm						     Page 120 - 1
  464A  9F		     1			lahf
  464B  80 E6 85		     1			and	temp_h,(s_flag or p_flag or c_flag)
  464E  80 CE 10		     1			or	temp_h,h_flag
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 121 - 1
 
 
@@ -8018,7 +8018,7 @@ z80em.asm						     Page 121 - 1
  4F40  83 C4 02		     2			add	sp,2
  4F43  8B D5		     2			mov	temp,bp
  4F45  BD 0006		     2			mov	bp,code_undef4
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 122 - 1
 
 
@@ -8084,7 +8084,7 @@ z80em.asm						     Page 122 - 1
  5940  83 C4 02		     2			add	sp,2
  5943  8B D5		     2			mov	temp,bp
  5945  BD 0006		     2			mov	bp,code_undef4
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 123 - 1
 
 
@@ -8150,7 +8150,7 @@ z80em.asm						     Page 123 - 1
  6340  83 C4 02		     2			add	sp,2
  6343  8B D5		     2			mov	temp,bp
  6345  BD 0006		     2			mov	bp,code_undef4
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 124 - 1
 
 
@@ -8216,7 +8216,7 @@ z80em.asm						     Page 124 - 1
  6D40  83 C4 02		     2			add	sp,2
  6D43  8B D5		     2			mov	temp,bp
  6D45  BD 0006		     2			mov	bp,code_undef4
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 125 - 1
 
 
@@ -8282,7 +8282,7 @@ z80em.asm						     Page 125 - 1
  7646  8B FA		     1			mov	di,temp
  7648  8A F4		     1			mov	temp_h,ah
  764A  9F		     1			lahf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 126 - 1
 
 
@@ -8348,7 +8348,7 @@ z80em.asm						     Page 126 - 1
  7E5B  FF E2		     2			jmp	temp
 
 				;-----------------------------------
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 127 - 1
 
 
@@ -8414,7 +8414,7 @@ z80em.asm						     Page 127 - 1
  8748  CB		     2			retf
  = 0088			     2		op2	= op2 + 1
  8840  83 C4 02		     2			add	sp,2
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 128 - 1
 
 
@@ -8480,7 +8480,7 @@ z80em.asm						     Page 128 - 1
  = 0093			     2		op2	= op2 + 1
  9340  83 C4 02		     2			add	sp,2
  9343  8B D5		     2			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 129 - 1
 
 
@@ -8546,7 +8546,7 @@ z80em.asm						     Page 129 - 1
  = 009F			     1		op2	= 9eH + 1
 						RESX	3
  9E40  8B D7		     1			mov	temp,di
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 130 - 1
 
 
@@ -8612,7 +8612,7 @@ z80em.asm						     Page 130 - 1
  A840  83 C4 02		     2			add	sp,2
  A843  8B D5		     2			mov	temp,bp
  A845  BD 0006		     2			mov	bp,code_undef4
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 131 - 1
 
 
@@ -8678,7 +8678,7 @@ z80em.asm						     Page 131 - 1
  B343  8B D5		     2			mov	temp,bp
  B345  BD 0006		     2			mov	bp,code_undef4
  B348  CB		     2			retf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 132 - 1
 
 
@@ -8744,7 +8744,7 @@ z80em.asm						     Page 132 - 1
  BE40  8B D7		     1			mov	temp,di
  BE42  5F		     1			pop	di
  BE43  80 25 7F		     1			and	byte ptr ds:[di],not(1 shl 7)
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 133 - 1
 
 
@@ -8810,7 +8810,7 @@ z80em.asm						     Page 133 - 1
  C64A  8A 34		     2			mov	temp_h,ds:[PC80]
  C64C  46		     2			inc	PC80
  C64D  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 134 - 1
 
 
@@ -8876,7 +8876,7 @@ z80em.asm						     Page 134 - 1
  D145  BD 0006		     2			mov	bp,code_undef4
  D148  CB		     2			retf
  = 00D2			     2		op2	= op2 + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 135 - 1
 
 
@@ -8942,7 +8942,7 @@ z80em.asm						     Page 135 - 1
  DC48  CB		     2			retf
  = 00DD			     2		op2	= op2 + 1
  DD40  83 C4 02		     2			add	sp,2
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 136 - 1
 
 
@@ -9008,7 +9008,7 @@ z80em.asm						     Page 136 - 1
  E64D  FF E2		     2			jmp	temp
 				CBX	0eeH
  E740  83 C4 02		     2			add	sp,2
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 137 - 1
 
 
@@ -9074,7 +9074,7 @@ z80em.asm						     Page 137 - 1
  = 00F2			     2		op2	= op2 + 1
  F240  83 C4 02		     2			add	sp,2
  F243  8B D5		     2			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 138 - 1
 
 
@@ -9140,7 +9140,7 @@ z80em.asm						     Page 138 - 1
  FD40  83 C4 02		     2			add	sp,2
  FD43  8B D5		     2			mov	temp,bp
  FD45  BD 0006		     2			mov	bp,code_undef4
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 139 - 1
 
 
@@ -9206,7 +9206,7 @@ z80em.asm						     Page 139 - 1
 						mov	temp,bp
 						test	A,src
 				else
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 140 - 1
 
 
@@ -9272,7 +9272,7 @@ z80em.asm						     Page 140 - 1
 				elseifidni	src,temp_l
 
 						mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 141 - 1
 
 
@@ -9338,7 +9338,7 @@ z80em.asm						     Page 141 - 1
  0AA5  CB		     2			retf
  = 000B			     2			op2	= op2 + 1
  0BA0  8B D5		     2			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 142 - 1
 
 
@@ -9404,7 +9404,7 @@ z80em.asm						     Page 142 - 1
  16A2  BD 0005		     2			mov	bp,code_undef2
  16A5  CB		     2			retf
  = 0017			     2			op2	= op2 + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 143 - 1
 
 
@@ -9470,7 +9470,7 @@ z80em.asm						     Page 143 - 1
  = 0024			     2			op2	= op2 + 1
  = 0025			     1		op2	= 24H + 1
 						TST	H
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 144 - 1
 
 
@@ -9536,7 +9536,7 @@ z80em.asm						     Page 144 - 1
  = 0030			     2			op2	= op2 + 1
  30A0  8B D5		     2			mov	temp,bp
  30A2  BD 0005		     2			mov	bp,code_undef2
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 145 - 1
 
 
@@ -9602,7 +9602,7 @@ z80em.asm						     Page 145 - 1
  3CA9  B2 00		     1			mov	temp_l,0
  3CAB  8A 34		     2			mov	temp_h,ds:[PC80]
  3CAD  46		     2			inc	PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 146 - 1
 
 
@@ -9668,7 +9668,7 @@ z80em.asm						     Page 146 - 1
  44A2  9F					lahf
  44A3  70 0A					jo	@f
  44A5  80 E4 FB					and	ah,not(v_flag)
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 147 - 1
 
 
@@ -9693,10 +9693,11 @@ z80em.asm						     Page 147 - 1
  45A5  CB		     1			retf
 				ED	46H				;IM	0(do nothing)
  = 0047			     1		op2	= 46H + 1
+ 46A0  B2 00					mov	temp_l,0
 						fetch1
- 46A0  8A 34		     1			mov	temp_h,ds:[PC80]
- 46A2  46		     1			inc	PC80
- 46A3  FF E2		     1			jmp	temp
+ 46A2  8A 34		     1			mov	temp_h,ds:[PC80]
+ 46A4  46		     1			inc	PC80
+ 46A5  FF E2		     1			jmp	temp
 
 				ED	47H				;LD	I,A
  = 0048			     1		op2	= 47H + 1
@@ -9733,11 +9734,11 @@ z80em.asm						     Page 147 - 1
  4AB0  80 E4 FD		     1	@@:		and	ah,not n_flag
  4AB3  80 CC 04		     1			or	ah,v_flag
  4AB6  B2 00		     1			mov	temp_l,0
- 4AB8  8A 34		     2			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 148 - 1
 
 
+ 4AB8  8A 34		     2			mov	temp_h,ds:[PC80]
  4ABA  46		     2			inc	PC80
  4ABB  FF E2		     2			jmp	temp
 
@@ -9799,11 +9800,11 @@ z80em.asm						     Page 148 - 1
  = 0052			     1		op2	= 51H + 1
 						IO
  51A0  8B D5		     1			mov	temp,bp
- 51A2  BD 0004		     1			mov	bp,code_IO
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 149 - 1
 
 
+ 51A2  BD 0004		     1			mov	bp,code_IO
  51A5  CB		     1			retf
 				ED	52H				;SBC	HL,DE
  = 0053			     1		op2	= 52H + 1
@@ -9843,10 +9844,11 @@ z80em.asm						     Page 149 - 1
  55A5  CB		     2			retf
  = 0056			     2			op2	= op2 + 1
  = 0057			     1		op2	= 56H + 1
+ 56A0  B2 00					mov	temp_l,0
 						fetch1
- 56A0  8A 34		     1			mov	temp_h,ds:[PC80]
- 56A2  46		     1			inc	PC80
- 56A3  FF E2		     1			jmp	temp
+ 56A2  8A 34		     1			mov	temp_h,ds:[PC80]
+ 56A4  46		     1			inc	PC80
+ 56A5  FF E2		     1			jmp	temp
 				ED	57H				;LD	A,I
  = 0058			     1		op2	= 57H + 1
  57A0  2E: A0 00FC				mov	A,I
@@ -9864,12 +9866,12 @@ z80em.asm						     Page 149 - 1
 				ED	59H				;OUT	(C),E
  = 005A			     1		op2	= 59H + 1
 						IO
- 59A0  8B D5		     1			mov	temp,bp
- 59A2  BD 0004		     1			mov	bp,code_IO
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 150 - 1
 
 
+ 59A0  8B D5		     1			mov	temp,bp
+ 59A2  BD 0004		     1			mov	bp,code_IO
  59A5  CB		     1			retf
 				ED	5aH				;ADC	HL,DE
  = 005B			     1		op2	= 5aH + 1
@@ -9922,20 +9924,21 @@ z80em.asm						     Page 150 - 1
  5DA5  CB		     2			retf
  = 005E			     2			op2	= op2 + 1
  = 005F			     1		op2	= 5eH + 1
+ 5EA0  B2 00					mov	temp_l,0
 						fetch1	
- 5EA0  8A 34		     1			mov	temp_h,ds:[PC80]
- 5EA2  46		     1			inc	PC80
- 5EA3  FF E2		     1			jmp	temp
+ 5EA2  8A 34		     1			mov	temp_h,ds:[PC80]
+ 5EA4  46		     1			inc	PC80
+ 5EA5  FF E2		     1			jmp	temp
 				ED	5fH				;LD	A,R
  = 0060			     1		op2	= 5fH + 1
  5FA0  2E: A0 00FD				mov	A,R
- 5FA4  FE C0					inc	A
- 5FA6  02 C5					add	A,B
- 5FA8  2E: A2 00FD				mov	R,A
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 151 - 1
 
 
+ 5FA4  FE C0					inc	A
+ 5FA6  02 C5					add	A,B
+ 5FA8  2E: A2 00FD				mov	R,A
  5FAC  B2 00					mov	temp_l,0
 						fetch1
  5FAE  8A 34		     1			mov	temp_h,ds:[PC80]
@@ -9995,13 +9998,13 @@ z80em.asm						     Page 151 - 1
  66A5  CB		     2			retf
  = 0067			     2			op2	= op2 + 1
  = 0068			     1		op2	= 67H + 1
- 67A0  8B D0					mov	temp,ax
- 67A2  80 E2 F0					and	temp_l,0f0h
- 67A5  8A 27					mov	ah,ds:[HL]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 152 - 1
 
 
+ 67A0  8B D0					mov	temp,ax
+ 67A2  80 E2 F0					and	temp_l,0f0h
+ 67A5  8A 27					mov	ah,ds:[HL]
 				;		ror	ax,4
  67A7  D1 C8					ror	ax,1
  67A9  D1 C8					ror	ax,1
@@ -10061,13 +10064,13 @@ z80em.asm						     Page 152 - 1
  6CA0  8B D0		     1			mov	temp,ax
  6CA2  8B C3		     1			mov	ax,HL
  6CA4  F6 E4		     1			mul	ah
- 6CA6  8B D8		     1			mov	HL,ax
- 6CA8  8B C2		     1			mov	ax,temp
- 6CAA  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 153 - 1
 
 
+ 6CA6  8B D8		     1			mov	HL,ax
+ 6CA8  8B C2		     1			mov	ax,temp
+ 6CAA  B2 00		     1			mov	temp_l,0
  6CAC  8A 34		     2			mov	temp_h,ds:[PC80]
  6CAE  46		     2			inc	PC80
  6CAF  FF E2		     2			jmp	temp
@@ -10127,13 +10130,13 @@ z80em.asm						     Page 153 - 1
  72AE  FF E2		     2			jmp	temp
  72B0  80 CC 06		     1	@@:		or	ah,(v_flag or n_flag)
  72B3  B2 00		     1			mov	temp_l,0
- 72B5  8A 34		     2			mov	temp_h,ds:[PC80]
- 72B7  46		     2			inc	PC80
- 72B8  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 154 - 1
 
 
+ 72B5  8A 34		     2			mov	temp_h,ds:[PC80]
+ 72B7  46		     2			inc	PC80
+ 72B8  FF E2		     2			jmp	temp
 				ED	73H				;LD	(nn),SP
  = 0074			     1		op2	= 73H + 1
  73A0  8B D5					mov	temp,bp
@@ -10193,13 +10196,13 @@ z80em.asm						     Page 154 - 1
  7AB6  B2 00		     1			mov	temp_l,0
  7AB8  8A 34		     2			mov	temp_h,ds:[PC80]
  7ABA  46		     2			inc	PC80
- 7ABB  FF E2		     2			jmp	temp
-
-				ED	7bH				;LD	SP,(nn)
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 155 - 1
 
 
+ 7ABB  FF E2		     2			jmp	temp
+
+				ED	7bH				;LD	SP,(nn)
  = 007C			     1		op2	= 7bH + 1
  7BA0  8B 3C					mov	SP80,ds:[PC80]
  7BA2  B2 00					mov	temp_l,0
@@ -10259,13 +10262,13 @@ z80em.asm						     Page 155 - 1
  85A2  BD 0005		     2			mov	bp,code_undef2
  85A5  CB		     2			retf
  = 0086			     2			op2	= op2 + 1
- 86A0  8B D5		     2			mov	temp,bp
- 86A2  BD 0005		     2			mov	bp,code_undef2
- 86A5  CB		     2			retf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 156 - 1
 
 
+ 86A0  8B D5		     2			mov	temp,bp
+ 86A2  BD 0005		     2			mov	bp,code_undef2
+ 86A5  CB		     2			retf
  = 0087			     2			op2	= op2 + 1
  87A0  8B D5		     2			mov	temp,bp
  87A2  BD 0005		     2			mov	bp,code_undef2
@@ -10325,13 +10328,13 @@ z80em.asm						     Page 156 - 1
  = 0095			     2			op2	= op2 + 1
  95A0  8B D5		     2			mov	temp,bp
  95A2  BD 0005		     2			mov	bp,code_undef2
- 95A5  CB		     2			retf
- = 0096			     2			op2	= op2 + 1
- 96A0  8B D5		     2			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 157 - 1
 
 
+ 95A5  CB		     2			retf
+ = 0096			     2			op2	= op2 + 1
+ 96A0  8B D5		     2			mov	temp,bp
  96A2  BD 0005		     2			mov	bp,code_undef2
  96A5  CB		     2			retf
  = 0097			     2			op2	= op2 + 1
@@ -10391,13 +10394,13 @@ z80em.asm						     Page 157 - 1
 
 				ED	0a1H				;CPI
  = 00A2			     1		op2	= 0a1H + 1
- A1A0  8A F4					mov	temp_h,ah
- A1A2  80 E6 01					and	temp_h,c_flag
-				;		or	temp_h,n_flag
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 158 - 1
 
 
+ A1A0  8A F4					mov	temp_h,ah
+ A1A2  80 E6 01					and	temp_h,c_flag
+				;		or	temp_h,n_flag
  A1A5  3A 07					cmp	A,ds:[HL]
  A1A7  9F					lahf
  A1A8  43					inc	HL
@@ -10457,13 +10460,13 @@ z80em.asm						     Page 158 - 1
  A8B2  80 E4 E9			@@:		and	ah,not (h_flag or v_flag or n_flag)
  A8B5  0A E6					or	ah,temp_h
  A8B7  B2 00					mov	temp_l,0
-						fetch1
- A8B9  8A 34		     1			mov	temp_h,ds:[PC80]
- A8BB  46		     1			inc	PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 159 - 1
 
 
+						fetch1
+ A8B9  8A 34		     1			mov	temp_h,ds:[PC80]
+ A8BB  46		     1			inc	PC80
  A8BC  FF E2		     1			jmp	temp
 
 				ED	0a9H				;CPD
@@ -10523,13 +10526,13 @@ z80em.asm						     Page 159 - 1
  B0A4  F3/ A4					rep	movsb
 				ifdifi		BC,<cx>
 				endif
- B0A6  87 F3					xchg	si,HL
- B0A8  87 FD					xchg	di,DE
- B0AA  80 E4 E9					and	ah,not (h_flag or v_flag or n_flag)
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 160 - 1
 
 
+ B0A6  87 F3					xchg	si,HL
+ B0A8  87 FD					xchg	di,DE
+ B0AA  80 E4 E9					and	ah,not (h_flag or v_flag or n_flag)
  B0AD  B2 00					mov	temp_l,0
 						fetch1
  B0AF  8A 34		     1			mov	temp_h,ds:[PC80]
@@ -10589,13 +10592,13 @@ z80em.asm						     Page 160 - 1
  = 00B5			     2			op2	= op2 + 1
  B5A0  8B D5		     2			mov	temp,bp
  B5A2  BD 0005		     2			mov	bp,code_undef2
- B5A5  CB		     2			retf
- = 00B6			     2			op2	= op2 + 1
- B6A0  8B D5		     2			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 161 - 1
 
 
+ B5A5  CB		     2			retf
+ = 00B6			     2			op2	= op2 + 1
+ B6A0  8B D5		     2			mov	temp,bp
  B6A2  BD 0005		     2			mov	bp,code_undef2
  B6A5  CB		     2			retf
  = 00B7			     2			op2	= op2 + 1
@@ -10655,13 +10658,13 @@ z80em.asm						     Page 161 - 1
  B9CE  8A 34		     1			mov	temp_h,ds:[PC80]
  B9D0  46		     1			inc	PC80
  B9D1  FF E2		     1			jmp	temp
-
-				ED	0baH				;INDR
- = 00BB			     1		op2	= 0baH + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 162 - 1
 
 
+
+				ED	0baH				;INDR
+ = 00BB			     1		op2	= 0baH + 1
 						IO
  BAA0  8B D5		     1			mov	temp,bp
  BAA2  BD 0004		     1			mov	bp,code_IO
@@ -10721,13 +10724,13 @@ z80em.asm						     Page 162 - 1
  C7A2  BD 0005		     2			mov	bp,code_undef2
  C7A5  CB		     2			retf
  = 00C8			     2			op2	= op2 + 1
- C8A0  8B D5		     2			mov	temp,bp
- C8A2  BD 0005		     2			mov	bp,code_undef2
- C8A5  CB		     2			retf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 163 - 1
 
 
+ C8A0  8B D5		     2			mov	temp,bp
+ C8A2  BD 0005		     2			mov	bp,code_undef2
+ C8A5  CB		     2			retf
  = 00C9			     2			op2	= op2 + 1
  C9A0  8B D5		     2			mov	temp,bp
  C9A2  BD 0005		     2			mov	bp,code_undef2
@@ -10787,13 +10790,13 @@ z80em.asm						     Page 163 - 1
  = 00D7			     2			op2	= op2 + 1
  D7A0  8B D5		     2			mov	temp,bp
  D7A2  BD 0005		     2			mov	bp,code_undef2
- D7A5  CB		     2			retf
- = 00D8			     2			op2	= op2 + 1
- D8A0  8B D5		     2			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 164 - 1
 
 
+ D7A5  CB		     2			retf
+ = 00D8			     2			op2	= op2 + 1
+ D8A0  8B D5		     2			mov	temp,bp
  D8A2  BD 0005		     2			mov	bp,code_undef2
  D8A5  CB		     2			retf
  = 00D9			     2			op2	= op2 + 1
@@ -10853,13 +10856,13 @@ z80em.asm						     Page 164 - 1
  E6A2  BD 0005		     2			mov	bp,code_undef2
  E6A5  CB		     2			retf
  = 00E7			     2			op2	= op2 + 1
- E7A0  8B D5		     2			mov	temp,bp
- E7A2  BD 0005		     2			mov	bp,code_undef2
- E7A5  CB		     2			retf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 165 - 1
 
 
+ E7A0  8B D5		     2			mov	temp,bp
+ E7A2  BD 0005		     2			mov	bp,code_undef2
+ E7A5  CB		     2			retf
  = 00E8			     2			op2	= op2 + 1
  E8A0  8B D5		     2			mov	temp,bp
  E8A2  BD 0005		     2			mov	bp,code_undef2
@@ -10919,13 +10922,13 @@ z80em.asm						     Page 165 - 1
  = 00F6			     2			op2	= op2 + 1
  F6A0  8B D5		     2			mov	temp,bp
  F6A2  BD 0005		     2			mov	bp,code_undef2
- F6A5  CB		     2			retf
- = 00F7			     2			op2	= op2 + 1
- F7A0  8B D5		     2			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 166 - 1
 
 
+ F6A5  CB		     2			retf
+ = 00F7			     2			op2	= op2 + 1
+ F7A0  8B D5		     2			mov	temp,bp
  F7A2  BD 0005		     2			mov	bp,code_undef2
  F7A5  CB		     2			retf
  = 00F8			     2			op2	= op2 + 1
@@ -10985,13 +10988,13 @@ z80em.asm						     Page 166 - 1
 
 						mov	temp,bp
 						mov	bp,ax
-						lodsb
-						cbw
-						add	ax,IXY
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 167 - 1
 
 
+						lodsb
+						cbw
+						add	ax,IXY
 						xchg	ax,bp
 						mov	dst,ds:[bp]
 						mov	bp,temp
@@ -11051,13 +11054,13 @@ z80em.asm						     Page 167 - 1
 						add	ax,IXY
 						xchg	ax,di
 						mov	ds:[di],src
-						mov	di,temp
-				endif
-						mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 168 - 1
 
 
+						mov	di,temp
+				endif
+						mov	temp_l,0
 						fetch1
 				endm
 
@@ -11117,13 +11120,13 @@ z80em.asm						     Page 168 - 1
 						inc	XYH
 						lahf
 						jo	@f
-						and	ah,not (v_flag or n_flag)
-						mov	temp_l,0
-						fetch1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 169 - 1
 
 
+						and	ah,not (v_flag or n_flag)
+						mov	temp_l,0
+						fetch1
 				@@:		and	ah,not n_flag
 						or	ah,v_flag
 						mov	temp_l,0
@@ -11183,13 +11186,13 @@ z80em.asm						     Page 169 - 1
 						dec	XYL
 				dec_x:		lahf
 						jo	@f
-						and	ah,not(v_flag)
-				;		or	ah,n_flag
-						mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 170 - 1
 
 
+						and	ah,not(v_flag)
+				;		or	ah,n_flag
+						mov	temp_l,0
 						fetch1
 				@@:		or	ah,(v_flag or n_flag)
 						mov	temp_l,0
@@ -11249,13 +11252,13 @@ z80em.asm						     Page 170 - 1
 						LD2	C_reg,XYH
 				DDFD	4dH
 						LD2	C_reg,XYL
-				DDFD	4eH
-						LDIXY	C_reg
-				DDFD	54H
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 171 - 1
 
 
+				DDFD	4eH
+						LDIXY	C_reg
+				DDFD	54H
 						LD2	D,XYH
 				DDFD	55H
 						LD2	D,XYL
@@ -11315,13 +11318,13 @@ z80em.asm						     Page 171 - 1
 						STIXY	E
 				DDFD	74H
 						STIXY	H
-				DDFD	75H
-						STIXY	L
-				DDFD	77H
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 172 - 1
 
 
+				DDFD	75H
+						STIXY	L
+				DDFD	77H
 						STIXY	A
 				DDFD	7cH
 						LD2	A,XYH
@@ -11381,13 +11384,13 @@ z80em.asm						     Page 172 - 1
 						sahf
 						adc	A,XYL
 				adc_x:		lahf
-						jo	@f
-						and	ah,not (v_flag or n_flag)
-						mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 173 - 1
 
 
+						jo	@f
+						and	ah,not (v_flag or n_flag)
+						mov	temp_l,0
 						fetch1
 				@@:		and	ah,not n_flag
 						or	ah,v_flag
@@ -11447,13 +11450,13 @@ z80em.asm						     Page 173 - 1
 						lahf
 						jo	@f
 						and	ah,not(v_flag)
-				;		or	ah,n_flag
-						mov	temp_l,0
-						fetch1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 174 - 1
 
 
+				;		or	ah,n_flag
+						mov	temp_l,0
+						fetch1
 				@@:		or	ah,(v_flag or n_flag)
 						mov	temp_l,0
 						fetch1
@@ -11513,13 +11516,13 @@ z80em.asm						     Page 174 - 1
 						fetch1
 
 				DDFD	0acH				;XOR	XYH
-						xor	A,XYH
-						lahf
-						and	ah,not(h_flag or n_flag or c_flag)
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 175 - 1
 
 
+						xor	A,XYH
+						lahf
+						and	ah,not(h_flag or n_flag or c_flag)
 						mov	temp_l,0
 						fetch1
 
@@ -11579,12 +11582,12 @@ z80em.asm						     Page 175 - 1
 						mov	temp_l,0
 						fetch1
 				@@:		or	ah,(v_flag or n_flag)
-						mov	temp_l,0
-						fetch1
-
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 176 - 1
 
+
+						mov	temp_l,0
+						fetch1
 
 				DDFD	0bdH				;CP	XYL
 						cmp	A,XYL
@@ -11645,12 +11648,12 @@ z80em.asm						     Page 176 - 1
 						fetch1
 				DDFD	0f9H				;LD	SP,IXY
 						mov	SP80,IXY
-						mov	temp_l,0
-						fetch1
-
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 177 - 1
 
+
+						mov	temp_l,0
+						fetch1
 
 				DDFD	0ffh
 						mov	temp,bp
@@ -11711,13 +11714,13 @@ z80em.asm						     Page 177 - 1
  096C  B2 00		     2			mov	temp_l,0
  096E  8A 34		     3			mov	temp_h,ds:[PC80]
  0970  46		     3			inc	PC80
- 0971  FF E2		     3			jmp	temp
- 0A60  8B D5		     3			mov	temp,bp
- 0A62  BD 0005		     3			mov	bp,code_undef2
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 178 - 1
 
 
+ 0971  FF E2		     3			jmp	temp
+ 0A60  8B D5		     3			mov	temp,bp
+ 0A62  BD 0005		     3			mov	bp,code_undef2
  0A65  CB		     3			retf
  = 000B			     3			op2	= op2 + 1
  0B60  8B D5		     3			mov	temp,bp
@@ -11777,13 +11780,13 @@ z80em.asm						     Page 178 - 1
  1865  CB		     3			retf
  = 0019			     3			op2	= op2 + 1
  = 001A			     2		op2	= 19H + 1
- 1960  D0 CC		     2			ror	ah,1
- 1962  2E: 01 2E 00F8	     2			add	IXY,DE
- 1967  D0 D4		     2			rcl	ah,1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 179 - 1
 
 
+ 1960  D0 CC		     2			ror	ah,1
+ 1962  2E: 01 2E 00F8	     2			add	IXY,DE
+ 1967  D0 D4		     2			rcl	ah,1
  1969  80 E4 FD		     2			and	ah,not (n_flag)
  196C  B2 00		     2			mov	temp_l,0
  196E  8A 34		     3			mov	temp_h,ds:[PC80]
@@ -11843,13 +11846,13 @@ z80em.asm						     Page 179 - 1
  2367  8A 34		     2			mov	temp_h,ds:[PC80]
  2369  46		     2			inc	PC80
  236A  FF E2		     2			jmp	temp
- = 0025			     2		op2	= 24H + 1
- 2460  9E		     1			sahf
- 2461  2E: FE 06 00F9	     1			inc	XYH
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 180 - 1
 
 
+ = 0025			     2		op2	= 24H + 1
+ 2460  9E		     1			sahf
+ 2461  2E: FE 06 00F9	     1			inc	XYH
  2466  9F		     1			lahf
  2467  70 0A		     1			jo	@f
  2469  80 E4 F9		     1			and	ah,not (v_flag or n_flag)
@@ -11909,13 +11912,13 @@ z80em.asm						     Page 180 - 1
  2A64  8B 1F		     1			mov	bx,ds:[bx]
  2A66  2E: 89 1E 00F8	     1			mov	IXY,bx
  2A6B  8B DA		     1			mov	bx,temp
- 2A6D  B2 00		     1			mov	temp_l,0
- 2A6F  8A 74 02		     2			mov	temp_h,ds:[PC80+2]
- 2A72  83 C6 03		     2			add	PC80,3
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 181 - 1
 
 
+ 2A6D  B2 00		     1			mov	temp_l,0
+ 2A6F  8A 74 02		     2			mov	temp_h,ds:[PC80+2]
+ 2A72  83 C6 03		     2			add	PC80,3
  2A75  FF E2		     2			jmp	temp
  = 002C			     2		op2	= 2bH + 1
  2B60  2E: FF 0E 00F8	     1			dec	IXY
@@ -11975,13 +11978,13 @@ z80em.asm						     Page 181 - 1
  3165  CB		     3			retf
  = 0032			     3			op2	= op2 + 1
  3260  8B D5		     3			mov	temp,bp
- 3262  BD 0005		     3			mov	bp,code_undef2
- 3265  CB		     3			retf
- = 0033			     3			op2	= op2 + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 182 - 1
 
 
+ 3262  BD 0005		     3			mov	bp,code_undef2
+ 3265  CB		     3			retf
+ = 0033			     3			op2	= op2 + 1
  3360  8B D5		     3			mov	temp,bp
  3362  BD 0005		     3			mov	bp,code_undef2
  3365  CB		     3			retf
@@ -12041,13 +12044,13 @@ z80em.asm						     Page 182 - 1
  3970  46		     3			inc	PC80
  3971  FF E2		     3			jmp	temp
  3A60  8B D5		     3			mov	temp,bp
- 3A62  BD 0005		     3			mov	bp,code_undef2
- 3A65  CB		     3			retf
- = 003B			     3			op2	= op2 + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 183 - 1
 
 
+ 3A62  BD 0005		     3			mov	bp,code_undef2
+ 3A65  CB		     3			retf
+ = 003B			     3			op2	= op2 + 1
  3B60  8B D5		     3			mov	temp,bp
  3B62  BD 0005		     3			mov	bp,code_undef2
  3B65  CB		     3			retf
@@ -12107,13 +12110,13 @@ z80em.asm						     Page 183 - 1
  466E  8B FA		     2			mov	di,temp
  4670  B2 00		     2			mov	temp_l,0
  4672  8A 34		     3			mov	temp_h,ds:[PC80]
- 4674  46		     3			inc	PC80
- 4675  FF E2		     3			jmp	temp
- 4760  8B D5		     3			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 184 - 1
 
 
+ 4674  46		     3			inc	PC80
+ 4675  FF E2		     3			jmp	temp
+ 4760  8B D5		     3			mov	temp,bp
  4762  BD 0005		     3			mov	bp,code_undef2
  4765  CB		     3			retf
  = 0048			     3			op2	= op2 + 1
@@ -12173,13 +12176,13 @@ z80em.asm						     Page 184 - 1
  5260  8B D5		     3			mov	temp,bp
  5262  BD 0005		     3			mov	bp,code_undef2
  5265  CB		     3			retf
- = 0053			     3			op2	= op2 + 1
- 5360  8B D5		     3			mov	temp,bp
- 5362  BD 0005		     3			mov	bp,code_undef2
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 185 - 1
 
 
+ = 0053			     3			op2	= op2 + 1
+ 5360  8B D5		     3			mov	temp,bp
+ 5362  BD 0005		     3			mov	bp,code_undef2
  5365  CB		     3			retf
  = 0054			     3			op2	= op2 + 1
  = 0055			     2		op2	= 54H + 1
@@ -12239,13 +12242,13 @@ z80em.asm						     Page 185 - 1
  5C6B  8A 34		     3			mov	temp_h,ds:[PC80]
  5C6D  46		     3			inc	PC80
  5C6E  FF E2		     3			jmp	temp
- = 005E			     2		op2	= 5dH + 1
- 5D60  8B D5		     2			mov	temp,bp
- 5D62  2E: 8A 16 00F8	     2			mov	E,XYL
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 186 - 1
 
 
+ = 005E			     2		op2	= 5dH + 1
+ 5D60  8B D5		     2			mov	temp,bp
+ 5D62  2E: 8A 16 00F8	     2			mov	E,XYL
  5D67  8B EA		     2			mov	bp,temp
  5D69  B2 00		     2			mov	temp_l,0
  5D6B  8A 34		     3			mov	temp_h,ds:[PC80]
@@ -12305,13 +12308,13 @@ z80em.asm						     Page 186 - 1
  656A  B2 00		     1			mov	temp_l,0
  656C  8A 34		     2			mov	temp_h,ds:[PC80]
  656E  46		     2			inc	PC80
- 656F  FF E2		     2			jmp	temp
- = 0067			     2		op2	= 66H + 1
- 6660  8B D7		     2			mov	temp,di
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 187 - 1
 
 
+ 656F  FF E2		     2			jmp	temp
+ = 0067			     2		op2	= 66H + 1
+ 6660  8B D7		     2			mov	temp,di
  6662  8B F8		     2			mov	di,ax
  6664  AC		     2			lodsb
  6665  98		     2			cbw
@@ -12371,13 +12374,13 @@ z80em.asm						     Page 187 - 1
  6E60  8B D7		     2			mov	temp,di
  6E62  8B F8		     2			mov	di,ax
  6E64  AC		     2			lodsb
- 6E65  98		     2			cbw
- 6E66  2E: 03 06 00F8	     2			add	ax,IXY
- 6E6B  97		     2			xchg	ax,di
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 188 - 1
 
 
+ 6E65  98		     2			cbw
+ 6E66  2E: 03 06 00F8	     2			add	ax,IXY
+ 6E6B  97		     2			xchg	ax,di
  6E6C  8A 1D		     2			mov	L,ds:[di]
  6E6E  8B FA		     2			mov	di,temp
  6E70  B2 00		     2			mov	temp_l,0
@@ -12437,13 +12440,13 @@ z80em.asm						     Page 188 - 1
  7366  2E: 03 06 00F8	     2			add	ax,IXY
  736B  95		     2			xchg	ax,bp
  736C  3E: 88 56 00	     2			mov	ds:[bp],E
- 7370  8B EA		     2			mov	bp,temp
- 7372  B2 00		     2			mov	temp_l,0
- 7374  8A 34		     3			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 189 - 1
 
 
+ 7370  8B EA		     2			mov	bp,temp
+ 7372  B2 00		     2			mov	temp_l,0
+ 7374  8A 34		     3			mov	temp_h,ds:[PC80]
  7376  46		     3			inc	PC80
  7377  FF E2		     3			jmp	temp
  = 0075			     2		op2	= 74H + 1
@@ -12503,13 +12506,13 @@ z80em.asm						     Page 189 - 1
  = 007B			     3			op2	= op2 + 1
  7B60  8B D5		     3			mov	temp,bp
  7B62  BD 0005		     3			mov	bp,code_undef2
- 7B65  CB		     3			retf
- = 007C			     3			op2	= op2 + 1
- = 007D			     2		op2	= 7cH + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 190 - 1
 
 
+ 7B65  CB		     3			retf
+ = 007C			     3			op2	= op2 + 1
+ = 007D			     2		op2	= 7cH + 1
  7C60  2E: A0 00F9	     2			mov	A,XYH
  7C64  B2 00		     2			mov	temp_l,0
  7C66  8A 34		     3			mov	temp_h,ds:[PC80]
@@ -12569,13 +12572,13 @@ z80em.asm						     Page 190 - 1
  847A  8A 34		     2			mov	temp_h,ds:[PC80]
  847C  46		     2			inc	PC80
  847D  FF E2		     2			jmp	temp
- = 0086			     2		op2	= 85H + 1
- 8560  2E: 02 06 00F8	     1			add	A,XYL
- 8565  9F		     1	??0002:		lahf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 191 - 1
 
 
+ = 0086			     2		op2	= 85H + 1
+ 8560  2E: 02 06 00F8	     1			add	A,XYL
+ 8565  9F		     1	??0002:		lahf
  8566  70 0A		     1			jo	@f
  8568  80 E4 F9		     1			and	ah,not (v_flag or n_flag)
  856B  B2 00		     1			mov	temp_l,0
@@ -12635,13 +12638,13 @@ z80em.asm						     Page 191 - 1
  8C7D  46		     2			inc	PC80
  8C7E  FF E2		     2			jmp	temp
  = 008E			     2		op2	= 8dH + 1
- 8D60  9E		     1			sahf
- 8D61  2E: 12 06 00F8	     1			adc	A,XYL
- 8D66  9F		     1	??0003:		lahf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 192 - 1
 
 
+ 8D60  9E		     1			sahf
+ 8D61  2E: 12 06 00F8	     1			adc	A,XYL
+ 8D66  9F		     1	??0003:		lahf
  8D67  70 0A		     1			jo	@f
  8D69  80 E4 F9		     1			and	ah,not (v_flag or n_flag)
  8D6C  B2 00		     1			mov	temp_l,0
@@ -12701,13 +12704,13 @@ z80em.asm						     Page 192 - 1
  947A  FF E2		     2			jmp	temp
  = 0096			     2		op2	= 95H + 1
  9560  2E: 2A 06 00F8	     1			sub	A,XYL
- 9565  9F		     1	??0004:		lahf
- 9566  70 0A		     1			jo	@f
- 9568  80 E4 FB		     1			and	ah,not(v_flag)
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 193 - 1
 
 
+ 9565  9F		     1	??0004:		lahf
+ 9566  70 0A		     1			jo	@f
+ 9568  80 E4 FB		     1			and	ah,not(v_flag)
  956B  B2 00		     1			mov	temp_l,0
  956D  8A 34		     2			mov	temp_h,ds:[PC80]
  956F  46		     2			inc	PC80
@@ -12767,13 +12770,13 @@ z80em.asm						     Page 193 - 1
  9D61  2E: 1A 06 00F8	     1			sbb	A,XYL
  9D66  9F		     1	??0005:		lahf
  9D67  70 0A		     1			jo	@f
- 9D69  80 E4 FB		     1			and	ah,not(v_flag)
- 9D6C  B2 00		     1			mov	temp_l,0
- 9D6E  8A 34		     2			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 194 - 1
 
 
+ 9D69  80 E4 FB		     1			and	ah,not(v_flag)
+ 9D6C  B2 00		     1			mov	temp_l,0
+ 9D6E  8A 34		     2			mov	temp_h,ds:[PC80]
  9D70  46		     2			inc	PC80
  9D71  FF E2		     2			jmp	temp
  9D73  80 CC 06		     1	@@:		or	ah,(v_flag or n_flag)
@@ -12833,13 +12836,13 @@ z80em.asm						     Page 194 - 1
  = 00A7			     2		op2	= 0a6H + 1
  A660  8B D3		     1			mov	temp,bx
  A662  8B D8		     1			mov	bx,ax
- A664  AC		     1			lodsb
- A665  98		     1			cbw
- A666  2E: 03 06 00F8	     1			add	ax,IXY
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 195 - 1
 
 
+ A664  AC		     1			lodsb
+ A665  98		     1			cbw
+ A666  2E: 03 06 00F8	     1			add	ax,IXY
  A66B  93		     1			xchg	ax,bx
  A66C  22 07		     1			and	A,ds:[bx]
  A66E  8B DA		     1			mov	bx,temp
@@ -12899,13 +12902,13 @@ z80em.asm						     Page 195 - 1
  AE71  80 E4 EC		     1			and	ah,not(h_flag or n_flag or c_flag)
  AE74  B2 00		     1			mov	temp_l,0
  AE76  8A 34		     2			mov	temp_h,ds:[PC80]
- AE78  46		     2			inc	PC80
- AE79  FF E2		     2			jmp	temp
- AF60  8B D5		     3			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 196 - 1
 
 
+ AE78  46		     2			inc	PC80
+ AE79  FF E2		     2			jmp	temp
+ AF60  8B D5		     3			mov	temp,bp
  AF62  BD 0005		     3			mov	bp,code_undef2
  AF65  CB		     3			retf
  = 00B0			     3			op2	= op2 + 1
@@ -12965,13 +12968,13 @@ z80em.asm						     Page 196 - 1
  B865  CB		     3			retf
  = 00B9			     3			op2	= op2 + 1
  B960  8B D5		     3			mov	temp,bp
- B962  BD 0005		     3			mov	bp,code_undef2
- B965  CB		     3			retf
- = 00BA			     3			op2	= op2 + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 197 - 1
 
 
+ B962  BD 0005		     3			mov	bp,code_undef2
+ B965  CB		     3			retf
+ = 00BA			     3			op2	= op2 + 1
  BA60  8B D5		     3			mov	temp,bp
  BA62  BD 0005		     3			mov	bp,code_undef2
  BA65  CB		     3			retf
@@ -13031,13 +13034,13 @@ z80em.asm						     Page 197 - 1
  C165  CB		     3			retf
  = 00C2			     3			op2	= op2 + 1
  C260  8B D5		     3			mov	temp,bp
- C262  BD 0005		     3			mov	bp,code_undef2
- C265  CB		     3			retf
- = 00C3			     3			op2	= op2 + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 198 - 1
 
 
+ C262  BD 0005		     3			mov	bp,code_undef2
+ C265  CB		     3			retf
+ = 00C3			     3			op2	= op2 + 1
  C360  8B D5		     3			mov	temp,bp
  C362  BD 0005		     3			mov	bp,code_undef2
  C365  CB		     3			retf
@@ -13097,13 +13100,13 @@ z80em.asm						     Page 198 - 1
  CF62  BD 0005		     3			mov	bp,code_undef2
  CF65  CB		     3			retf
  = 00D0			     3			op2	= op2 + 1
- D060  8B D5		     3			mov	temp,bp
- D062  BD 0005		     3			mov	bp,code_undef2
- D065  CB		     3			retf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 199 - 1
 
 
+ D060  8B D5		     3			mov	temp,bp
+ D062  BD 0005		     3			mov	bp,code_undef2
+ D065  CB		     3			retf
  = 00D1			     3			op2	= op2 + 1
  D160  8B D5		     3			mov	temp,bp
  D162  BD 0005		     3			mov	bp,code_undef2
@@ -13163,13 +13166,13 @@ z80em.asm						     Page 199 - 1
  = 00DF			     3			op2	= op2 + 1
  DF60  8B D5		     3			mov	temp,bp
  DF62  BD 0005		     3			mov	bp,code_undef2
- DF65  CB		     3			retf
- = 00E0			     3			op2	= op2 + 1
- E060  8B D5		     3			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 200 - 1
 
 
+ DF65  CB		     3			retf
+ = 00E0			     3			op2	= op2 + 1
+ E060  8B D5		     3			mov	temp,bp
  E062  BD 0005		     3			mov	bp,code_undef2
  E065  CB		     3			retf
  = 00E1			     3			op2	= op2 + 1
@@ -13229,13 +13232,13 @@ z80em.asm						     Page 200 - 1
  = 00EB			     3			op2	= op2 + 1
  EB60  8B D5		     3			mov	temp,bp
  EB62  BD 0005		     3			mov	bp,code_undef2
- EB65  CB		     3			retf
- = 00EC			     3			op2	= op2 + 1
- EC60  8B D5		     3			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 201 - 1
 
 
+ EB65  CB		     3			retf
+ = 00EC			     3			op2	= op2 + 1
+ EC60  8B D5		     3			mov	temp,bp
  EC62  BD 0005		     3			mov	bp,code_undef2
  EC65  CB		     3			retf
  = 00ED			     3			op2	= op2 + 1
@@ -13295,13 +13298,13 @@ z80em.asm						     Page 201 - 1
  F96A  FF E2		     2			jmp	temp
  FA60  8B D5		     3			mov	temp,bp
  FA62  BD 0005		     3			mov	bp,code_undef2
- FA65  CB		     3			retf
- = 00FB			     3			op2	= op2 + 1
- FB60  8B D5		     3			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 202 - 1
 
 
+ FA65  CB		     3			retf
+ = 00FB			     3			op2	= op2 + 1
+ FB60  8B D5		     3			mov	temp,bp
  FB62  BD 0005		     3			mov	bp,code_undef2
  FB65  CB		     3			retf
  = 00FC			     3			op2	= op2 + 1
@@ -13361,13 +13364,13 @@ z80em.asm						     Page 202 - 1
  0880  8B D5		     3			mov	temp,bp
  0882  BD 0005		     3			mov	bp,code_undef2
  0885  CB		     3			retf
- = 0009			     3			op2	= op2 + 1
- = 000A			     2		op2	= 09H + 1
- 0980  D0 CC		     2			ror	ah,1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 203 - 1
 
 
+ = 0009			     3			op2	= op2 + 1
+ = 000A			     2		op2	= 09H + 1
+ 0980  D0 CC		     2			ror	ah,1
  0982  2E: 01 0E 00FA	     2			add	IXY,BC
  0987  D0 D4		     2			rcl	ah,1
  0989  80 E4 FD		     2			and	ah,not (n_flag)
@@ -13427,13 +13430,13 @@ z80em.asm						     Page 203 - 1
  1682  BD 0005		     3			mov	bp,code_undef2
  1685  CB		     3			retf
  = 0017			     3			op2	= op2 + 1
- 1780  8B D5		     3			mov	temp,bp
- 1782  BD 0005		     3			mov	bp,code_undef2
- 1785  CB		     3			retf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 204 - 1
 
 
+ 1780  8B D5		     3			mov	temp,bp
+ 1782  BD 0005		     3			mov	bp,code_undef2
+ 1785  CB		     3			retf
  = 0018			     3			op2	= op2 + 1
  1880  8B D5		     3			mov	temp,bp
  1882  BD 0005		     3			mov	bp,code_undef2
@@ -13493,13 +13496,13 @@ z80em.asm						     Page 204 - 1
  228C  8B DA		     1			mov	bx,temp
  228E  58		     1			pop	ax
  228F  B2 00		     1			mov	temp_l,0
- 2291  8A 34		     2			mov	temp_h,ds:[PC80]
- 2293  46		     2			inc	PC80
- 2294  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 205 - 1
 
 
+ 2291  8A 34		     2			mov	temp_h,ds:[PC80]
+ 2293  46		     2			inc	PC80
+ 2294  FF E2		     2			jmp	temp
  = 0024			     2		op2	= 23H + 1
  2380  2E: FF 06 00FA	     1			inc	IXY
  2385  B2 00		     1			mov	temp_l,0
@@ -13559,13 +13562,13 @@ z80em.asm						     Page 205 - 1
  2987  D0 D4		     1			rcl	ah,1
  2989  80 E4 FD		     1			and	ah,not (n_flag)
  298C  B2 00		     1			mov	temp_l,0
- 298E  8A 34		     2			mov	temp_h,ds:[PC80]
- 2990  46		     2			inc	PC80
- 2991  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 206 - 1
 
 
+ 298E  8A 34		     2			mov	temp_h,ds:[PC80]
+ 2990  46		     2			inc	PC80
+ 2991  FF E2		     2			jmp	temp
  = 002B			     2		op2	= 2aH + 1
  2A80  8B D3		     1			mov	temp,bx
  2A82  8B 1C		     1			mov	bx,ds:[PC80]
@@ -13625,13 +13628,13 @@ z80em.asm						     Page 206 - 1
  2F82  BD 0005		     3			mov	bp,code_undef2
  2F85  CB		     3			retf
  = 0030			     3			op2	= op2 + 1
- 3080  8B D5		     3			mov	temp,bp
- 3082  BD 0005		     3			mov	bp,code_undef2
- 3085  CB		     3			retf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 207 - 1
 
 
+ 3080  8B D5		     3			mov	temp,bp
+ 3082  BD 0005		     3			mov	bp,code_undef2
+ 3085  CB		     3			retf
  = 0031			     3			op2	= op2 + 1
  3180  8B D5		     3			mov	temp,bp
  3182  BD 0005		     3			mov	bp,code_undef2
@@ -13691,13 +13694,13 @@ z80em.asm						     Page 207 - 1
  3885  CB		     3			retf
  = 0039			     3			op2	= op2 + 1
  = 003A			     2		op2	= 39H + 1
- 3980  D0 CC		     2			ror	ah,1
- 3982  2E: 01 3E 00FA	     2			add	IXY,SP80
- 3987  D0 D4		     2			rcl	ah,1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 208 - 1
 
 
+ 3980  D0 CC		     2			ror	ah,1
+ 3982  2E: 01 3E 00FA	     2			add	IXY,SP80
+ 3987  D0 D4		     2			rcl	ah,1
  3989  80 E4 FD		     2			and	ah,not (n_flag)
  398C  B2 00		     2			mov	temp_l,0
  398E  8A 34		     3			mov	temp_h,ds:[PC80]
@@ -13757,13 +13760,13 @@ z80em.asm						     Page 208 - 1
  458A  FF E2		     3			jmp	temp
  = 0047			     2		op2	= 46H + 1
  4680  8B D7		     2			mov	temp,di
- 4682  8B F8		     2			mov	di,ax
- 4684  AC		     2			lodsb
- 4685  98		     2			cbw
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 209 - 1
 
 
+ 4682  8B F8		     2			mov	di,ax
+ 4684  AC		     2			lodsb
+ 4685  98		     2			cbw
  4686  2E: 03 06 00FA	     2			add	ax,IXY
  468B  97		     2			xchg	ax,di
  468C  8A 2D		     2			mov	B,ds:[di]
@@ -13823,13 +13826,13 @@ z80em.asm						     Page 209 - 1
  = 0050			     3			op2	= op2 + 1
  5080  8B D5		     3			mov	temp,bp
  5082  BD 0005		     3			mov	bp,code_undef2
- 5085  CB		     3			retf
- = 0051			     3			op2	= op2 + 1
- 5180  8B D5		     3			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 210 - 1
 
 
+ 5085  CB		     3			retf
+ = 0051			     3			op2	= op2 + 1
+ 5180  8B D5		     3			mov	temp,bp
  5182  BD 0005		     3			mov	bp,code_undef2
  5185  CB		     3			retf
  = 0052			     3			op2	= op2 + 1
@@ -13889,13 +13892,13 @@ z80em.asm						     Page 210 - 1
  5B80  8B D5		     3			mov	temp,bp
  5B82  BD 0005		     3			mov	bp,code_undef2
  5B85  CB		     3			retf
- = 005C			     3			op2	= op2 + 1
- = 005D			     2		op2	= 5cH + 1
- 5C80  8B D5		     2			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 211 - 1
 
 
+ = 005C			     3			op2	= op2 + 1
+ = 005D			     2		op2	= 5cH + 1
+ 5C80  8B D5		     2			mov	temp,bp
  5C82  2E: 8A 16 00FB	     2			mov	E,XYH
  5C87  8B EA		     2			mov	bp,temp
  5C89  B2 00		     2			mov	temp_l,0
@@ -13955,13 +13958,13 @@ z80em.asm						     Page 211 - 1
  638C  FF E2		     3			jmp	temp
  = 0065			     2		op2	= 64H + 1
  6480  B2 00		     2			mov	temp_l,0
- 6482  8A 34		     3			mov	temp_h,ds:[PC80]
- 6484  46		     3			inc	PC80
- 6485  FF E2		     3			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 212 - 1
 
 
+ 6482  8A 34		     3			mov	temp_h,ds:[PC80]
+ 6484  46		     3			inc	PC80
+ 6485  FF E2		     3			jmp	temp
  = 0066			     2		op2	= 65H + 1
  6580  2E: 8A 36 00FA	     1			mov	temp_h,XYL
  6585  2E: 88 36 00FB	     1			mov	XYH,temp_h
@@ -14021,13 +14024,13 @@ z80em.asm						     Page 212 - 1
  6C8C  8A 34		     2			mov	temp_h,ds:[PC80]
  6C8E  46		     2			inc	PC80
  6C8F  FF E2		     2			jmp	temp
- = 006E			     2		op2	= 6dH + 1
- 6D80  B2 00		     2			mov	temp_l,0
- 6D82  8A 34		     3			mov	temp_h,ds:[PC80]
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 213 - 1
 
 
+ = 006E			     2		op2	= 6dH + 1
+ 6D80  B2 00		     2			mov	temp_l,0
+ 6D82  8A 34		     3			mov	temp_h,ds:[PC80]
  6D84  46		     3			inc	PC80
  6D85  FF E2		     3			jmp	temp
  = 006F			     2		op2	= 6eH + 1
@@ -14087,13 +14090,13 @@ z80em.asm						     Page 213 - 1
  7292  B2 00		     2			mov	temp_l,0
  7294  8A 34		     3			mov	temp_h,ds:[PC80]
  7296  46		     3			inc	PC80
- 7297  FF E2		     3			jmp	temp
- = 0074			     2		op2	= 73H + 1
- 7380  8B D5		     2			mov	temp,bp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 214 - 1
 
 
+ 7297  FF E2		     3			jmp	temp
+ = 0074			     2		op2	= 73H + 1
+ 7380  8B D5		     2			mov	temp,bp
  7382  8B E8		     2			mov	bp,ax
  7384  AC		     2			lodsb
  7385  98		     2			cbw
@@ -14153,13 +14156,13 @@ z80em.asm						     Page 214 - 1
  7885  CB		     3			retf
  = 0079			     3			op2	= op2 + 1
  7980  8B D5		     3			mov	temp,bp
- 7982  BD 0005		     3			mov	bp,code_undef2
- 7985  CB		     3			retf
- = 007A			     3			op2	= op2 + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 215 - 1
 
 
+ 7982  BD 0005		     3			mov	bp,code_undef2
+ 7985  CB		     3			retf
+ = 007A			     3			op2	= op2 + 1
  7A80  8B D5		     3			mov	temp,bp
  7A82  BD 0005		     3			mov	bp,code_undef2
  7A85  CB		     3			retf
@@ -14219,13 +14222,13 @@ z80em.asm						     Page 215 - 1
  8486  70 0A		     1			jo	@f
  8488  80 E4 F9		     1			and	ah,not (v_flag or n_flag)
  848B  B2 00		     1			mov	temp_l,0
- 848D  8A 34		     2			mov	temp_h,ds:[PC80]
- 848F  46		     2			inc	PC80
- 8490  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 216 - 1
 
 
+ 848D  8A 34		     2			mov	temp_h,ds:[PC80]
+ 848F  46		     2			inc	PC80
+ 8490  FF E2		     2			jmp	temp
  8492  80 E4 FD		     1	@@:		and	ah,not n_flag
  8495  80 CC 04		     1			or	ah,v_flag
  8498  B2 00		     1			mov	temp_l,0
@@ -14285,13 +14288,13 @@ z80em.asm						     Page 216 - 1
  8C89  80 E4 F9		     1			and	ah,not (v_flag or n_flag)
  8C8C  B2 00		     1			mov	temp_l,0
  8C8E  8A 34		     2			mov	temp_h,ds:[PC80]
- 8C90  46		     2			inc	PC80
- 8C91  FF E2		     2			jmp	temp
- 8C93  80 E4 FD		     1	@@:		and	ah,not n_flag
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 217 - 1
 
 
+ 8C90  46		     2			inc	PC80
+ 8C91  FF E2		     2			jmp	temp
+ 8C93  80 E4 FD		     1	@@:		and	ah,not n_flag
  8C96  80 CC 04		     1			or	ah,v_flag
  8C99  B2 00		     1			mov	temp_l,0
  8C9B  8A 34		     2			mov	temp_h,ds:[PC80]
@@ -14351,13 +14354,13 @@ z80em.asm						     Page 217 - 1
  9488  80 E4 FB		     1			and	ah,not(v_flag)
  948B  B2 00		     1			mov	temp_l,0
  948D  8A 34		     2			mov	temp_h,ds:[PC80]
- 948F  46		     2			inc	PC80
- 9490  FF E2		     2			jmp	temp
- 9492  80 CC 06		     1	@@:		or	ah,(v_flag or n_flag)
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 218 - 1
 
 
+ 948F  46		     2			inc	PC80
+ 9490  FF E2		     2			jmp	temp
+ 9492  80 CC 06		     1	@@:		or	ah,(v_flag or n_flag)
  9495  B2 00		     1			mov	temp_l,0
  9497  8A 34		     2			mov	temp_h,ds:[PC80]
  9499  46		     2			inc	PC80
@@ -14417,13 +14420,13 @@ z80em.asm						     Page 218 - 1
  9C90  46		     2			inc	PC80
  9C91  FF E2		     2			jmp	temp
  9C93  80 CC 06		     1	@@:		or	ah,(v_flag or n_flag)
- 9C96  B2 00		     1			mov	temp_l,0
- 9C98  8A 34		     2			mov	temp_h,ds:[PC80]
- 9C9A  46		     2			inc	PC80
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 219 - 1
 
 
+ 9C96  B2 00		     1			mov	temp_l,0
+ 9C98  8A 34		     2			mov	temp_h,ds:[PC80]
+ 9C9A  46		     2			inc	PC80
  9C9B  FF E2		     2			jmp	temp
  = 009E			     2		op2	= 9dH + 1
  9D80  9E		     1			sahf
@@ -14483,13 +14486,13 @@ z80em.asm						     Page 219 - 1
  = 00A6			     2		op2	= 0a5H + 1
  A580  2E: 22 06 00FB	     1			and	A,XYH
  A585  9F		     1			lahf
- A586  80 E4 FC		     1			and	ah,not(n_flag or c_flag)
- A589  80 CC 10		     1			or	ah,h_flag
- A58C  B2 00		     1			mov	temp_l,0
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 220 - 1
 
 
+ A586  80 E4 FC		     1			and	ah,not(n_flag or c_flag)
+ A589  80 CC 10		     1			or	ah,h_flag
+ A58C  B2 00		     1			mov	temp_l,0
  A58E  8A 34		     2			mov	temp_h,ds:[PC80]
  A590  46		     2			inc	PC80
  A591  FF E2		     2			jmp	temp
@@ -14549,13 +14552,13 @@ z80em.asm						     Page 220 - 1
  AE80  8B D3		     1			mov	temp,bx
  AE82  8B D8		     1			mov	bx,ax
  AE84  AC		     1			lodsb
- AE85  98		     1			cbw
- AE86  2E: 03 06 00FA	     1			add	ax,IXY
- AE8B  93		     1			xchg	ax,bx
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 221 - 1
 
 
+ AE85  98		     1			cbw
+ AE86  2E: 03 06 00FA	     1			add	ax,IXY
+ AE8B  93		     1			xchg	ax,bx
  AE8C  32 07		     1			xor	A,ds:[bx]
  AE8E  8B DA		     1			mov	bx,temp
  AE90  9F		     1			lahf
@@ -14615,13 +14618,13 @@ z80em.asm						     Page 221 - 1
  B696  8A 34		     2			mov	temp_h,ds:[PC80]
  B698  46		     2			inc	PC80
  B699  FF E2		     2			jmp	temp
- B780  8B D5		     3			mov	temp,bp
- B782  BD 0005		     3			mov	bp,code_undef2
- B785  CB		     3			retf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 222 - 1
 
 
+ B780  8B D5		     3			mov	temp,bp
+ B782  BD 0005		     3			mov	bp,code_undef2
+ B785  CB		     3			retf
  = 00B8			     3			op2	= op2 + 1
  B880  8B D5		     3			mov	temp,bp
  B882  BD 0005		     3			mov	bp,code_undef2
@@ -14681,13 +14684,13 @@ z80em.asm						     Page 222 - 1
  BF82  BD 0005		     3			mov	bp,code_undef2
  BF85  CB		     3			retf
  = 00C0			     3			op2	= op2 + 1
- C080  8B D5		     3			mov	temp,bp
- C082  BD 0005		     3			mov	bp,code_undef2
- C085  CB		     3			retf
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 223 - 1
 
 
+ C080  8B D5		     3			mov	temp,bp
+ C082  BD 0005		     3			mov	bp,code_undef2
+ C085  CB		     3			retf
  = 00C1			     3			op2	= op2 + 1
  C180  8B D5		     3			mov	temp,bp
  C182  BD 0005		     3			mov	bp,code_undef2
@@ -14747,13 +14750,13 @@ z80em.asm						     Page 223 - 1
  CD80  8B D5		     3			mov	temp,bp
  CD82  BD 0005		     3			mov	bp,code_undef2
  CD85  CB		     3			retf
- = 00CE			     3			op2	= op2 + 1
- CE80  8B D5		     3			mov	temp,bp
- CE82  BD 0005		     3			mov	bp,code_undef2
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 224 - 1
 
 
+ = 00CE			     3			op2	= op2 + 1
+ CE80  8B D5		     3			mov	temp,bp
+ CE82  BD 0005		     3			mov	bp,code_undef2
  CE85  CB		     3			retf
  = 00CF			     3			op2	= op2 + 1
  CF80  8B D5		     3			mov	temp,bp
@@ -14813,13 +14816,13 @@ z80em.asm						     Page 224 - 1
  DC85  CB		     3			retf
  = 00DD			     3			op2	= op2 + 1
  DD80  8B D5		     3			mov	temp,bp
- DD82  BD 0005		     3			mov	bp,code_undef2
- DD85  CB		     3			retf
- = 00DE			     3			op2	= op2 + 1
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 225 - 1
 
 
+ DD82  BD 0005		     3			mov	bp,code_undef2
+ DD85  CB		     3			retf
+ = 00DE			     3			op2	= op2 + 1
  DE80  8B D5		     3			mov	temp,bp
  DE82  BD 0005		     3			mov	bp,code_undef2
  DE85  CB		     3			retf
@@ -14879,13 +14882,13 @@ z80em.asm						     Page 225 - 1
  = 00EA			     2		op2	= 0e9H + 1
  E980  2E: 8B 36 00FA	     1			mov	PC80,IXY
  E985  B2 00		     1			mov	temp_l,0
- E987  8A 34		     2			mov	temp_h,ds:[PC80]
- E989  46		     2			inc	PC80
- E98A  FF E2		     2			jmp	temp
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 226 - 1
 
 
+ E987  8A 34		     2			mov	temp_h,ds:[PC80]
+ E989  46		     2			inc	PC80
+ E98A  FF E2		     2			jmp	temp
  EA80  8B D5		     3			mov	temp,bp
  EA82  BD 0005		     3			mov	bp,code_undef2
  EA85  CB		     3			retf
@@ -14945,13 +14948,13 @@ z80em.asm						     Page 226 - 1
  F880  8B D5		     3			mov	temp,bp
  F882  BD 0005		     3			mov	bp,code_undef2
  F885  CB		     3			retf
- = 00F9			     3			op2	= op2 + 1
- = 00FA			     2		op2	= 0f9H + 1
- F980  2E: 8B 3E 00FA	     1			mov	SP80,IXY
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 227 - 1
 
 
+ = 00F9			     3			op2	= op2 + 1
+ = 00FA			     2		op2	= 0f9H + 1
+ F980  2E: 8B 3E 00FA	     1			mov	SP80,IXY
  F985  B2 00		     1			mov	temp_l,0
  F987  8A 34		     2			mov	temp_h,ds:[PC80]
  F989  46		     2			inc	PC80
@@ -15011,13 +15014,13 @@ z80em.asm						     Page 227 - 1
  0000						.data
 						.stack
 
-						end	exe_start
-				  
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Page 228 - 1
 
 
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+						end	exe_start
+				  
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Symbols 229 - 1
 
 
@@ -15081,7 +15084,7 @@ XRA  . . . . . . . . . . . . . .	Proc
 fetch1 . . . . . . . . . . . . .	Proc
 fetch2 . . . . . . . . . . . . .	Proc
 fetch3 . . . . . . . . . . . . .	Proc
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Symbols 230 - 1
 
 
@@ -15095,7 +15098,7 @@ DGROUP . . . . . . . . . . . . .	GROUP
 _DATA  . . . . . . . . . . . . .	16 Bit	 0000	  Word	  Public  'DATA'	
 STACK  . . . . . . . . . . . . .	16 Bit	 0400	  Para	  Stack	  'STACK'	 
 _TEXT  . . . . . . . . . . . . .	16 Bit	 FFEC	  Word	  Public  'CODE'	
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Symbols 231 - 1
 
 
@@ -15161,7 +15164,7 @@ exe_msg1 . . . . . . . . . . . .	Byte	 0005	  _TEXT
 exe_msg2 . . . . . . . . . . . .	Byte	 0306	  _TEXT	
 exe_msg3 . . . . . . . . . . . .	Byte	 1B06	  _TEXT	
 exe_msg4 . . . . . . . . . . . .	Byte	 0B06	  _TEXT	
-Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 17:05:14
+Microsoft (R) Macro Assembler Version 6.00AD    	    05/18/25 18:56:04
 z80em.asm						     Symbols 232 - 1
 
 
