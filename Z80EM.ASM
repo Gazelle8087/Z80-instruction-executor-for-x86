@@ -2826,6 +2826,7 @@ ED	44H				;NEG
 ED	45H				;RETN
 		IO
 ED	46H				;IM	0(do nothing)
+		mov	temp_l,0
 		fetch1
 
 ED	47H				;LD	I,A
@@ -2879,6 +2880,7 @@ ED	53H				;LD	(nn),DE
 		mov	temp_l,0
 		fetch3
 ED	56H				;IM	1(do nothing)
+		mov	temp_l,0
 		fetch1
 ED	57H				;LD	A,I
 		mov	A,I
@@ -2908,6 +2910,7 @@ endif
 ED	5cH				;MLT	DE
 		MLT	DE
 ED	5eH				;IM	2(do nothing)
+		mov	temp_l,0
 		fetch1	
 ED	5fH				;LD	A,R
 		mov	A,R
