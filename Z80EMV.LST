@@ -1,4 +1,4 @@
-Microsoft (R) Macro Assembler Version 6.00AD    	    09/21/25 21:28:31
+Microsoft (R) Macro Assembler Version 6.00AD    	    09/21/25 22:45:37
 z80emv.asm						     Page 1 - 1
 
 
@@ -9756,7 +9756,10 @@ z80emv.asm						     Page 1 - 1
  67BF  80 E6 01					and	temp_h,c_flag
  67C2  0A E6					or	ah,temp_h
  67C4  B2 00					mov	temp_l,0
- 67C6  E9 9837					jmp	no_op
+						fetch1
+ 67C6  8A 34		     1			mov	temp_h,ds:[PC80]
+ 67C8  46		     1			inc	PC80
+ 67C9  FF E2		     1			jmp	temp
 
 				ED	68H				;IN	L,(C)
  = 0069			     1		op2	= 68H + 1
@@ -9839,7 +9842,10 @@ z80emv.asm						     Page 1 - 1
  6FBF  80 E6 01					and	temp_h,c_flag
  6FC2  0A E6					or	ah,temp_h
  6FC4  B2 00					mov	temp_l,0
- 6FC6  E9 9037					jmp	no_op
+						fetch1
+ 6FC6  8A 34		     1			mov	temp_h,ds:[PC80]
+ 6FC8  46		     1			inc	PC80
+ 6FC9  FF E2		     1			jmp	temp
 
 				ED	70H				;IN	(C)
  = 0071			     1		op2	= 70H + 1
@@ -10308,7 +10314,7 @@ z80emv.asm						     Page 1 - 1
 				;		or	temp_h,n_flag
  B1A5  3A 07			cpir_loop:	cmp	A,[HL]
  B1A7  9F					lahf
- B1A8  74 16					je	short cpir_z
+ B1A8  74 10					je	short cpir_z
  B1AA  43					inc	HL
  B1AB  49					dec	BC
  B1AC  75 F7					jnz	short cpir_loop
@@ -10320,19 +10326,17 @@ z80emv.asm						     Page 1 - 1
  B1B7  46		     1			inc	PC80
  B1B8  FF E2		     1			jmp	temp
 
-						org	0b1c0h
-
- B1C0  43			cpir_z:		inc	HL
- B1C1  49					dec	BC
- B1C2  74 03					jz	short cpir_end
- B1C4  80 CE 04					or	temp_h,v_flag
- B1C7  80 E4 BA			cpir_end:	and	ah,not (z_flag or v_flag or c_flag)
- B1CA  0A E6					or	ah,temp_h
- B1CC  B2 00					mov	temp_l,0
+ B1BA  43			cpir_z:		inc	HL
+ B1BB  49					dec	BC
+ B1BC  74 03					jz	short cpir_end
+ B1BE  80 CE 04					or	temp_h,v_flag
+ B1C1  80 E4 BA			cpir_end:	and	ah,not (z_flag or v_flag or c_flag)
+ B1C4  0A E6					or	ah,temp_h
+ B1C6  B2 00					mov	temp_l,0
 						fetch1
- B1CE  8A 34		     1			mov	temp_h,ds:[PC80]
- B1D0  46		     1			inc	PC80
- B1D1  FF E2		     1			jmp	temp
+ B1C8  8A 34		     1			mov	temp_h,ds:[PC80]
+ B1CA  46		     1			inc	PC80
+ B1CB  FF E2		     1			jmp	temp
 
 				ED	0b2H				;INIR
  = 00B3			     1		op2	= 0b2H + 1
@@ -10397,7 +10401,7 @@ z80emv.asm						     Page 1 - 1
 				;		or	temp_h,n_flag
  B9A5  3A 07			cpdr_loop:	cmp	A,[HL]
  B9A7  9F					lahf
- B9A8  74 16					je	short cpdr_z
+ B9A8  74 10					je	short cpdr_z
  B9AA  4B					dec	HL
  B9AB  49					dec	BC
  B9AC  75 F7					jnz	short cpdr_loop
@@ -10409,19 +10413,17 @@ z80emv.asm						     Page 1 - 1
  B9B7  46		     1			inc	PC80
  B9B8  FF E2		     1			jmp	temp
 
-						org	0b9c0h
-
- B9C0  4B			cpdr_z:		dec	HL
- B9C1  49					dec	BC
- B9C2  74 03					jz	short cpdr_end
- B9C4  80 CE 04					or	temp_h,v_flag
- B9C7  80 E4 BA			cpdr_end:	and	ah,not (z_flag or v_flag or c_flag)
- B9CA  0A E6					or	ah,temp_h
- B9CC  B2 00					mov	temp_l,0
+ B9BA  4B			cpdr_z:		dec	HL
+ B9BB  49					dec	BC
+ B9BC  74 03					jz	short cpdr_end
+ B9BE  80 CE 04					or	temp_h,v_flag
+ B9C1  80 E4 BA			cpdr_end:	and	ah,not (z_flag or v_flag or c_flag)
+ B9C4  0A E6					or	ah,temp_h
+ B9C6  B2 00					mov	temp_l,0
 						fetch1
- B9CE  8A 34		     1			mov	temp_h,ds:[PC80]
- B9D0  46		     1			inc	PC80
- B9D1  FF E2		     1			jmp	temp
+ B9C8  8A 34		     1			mov	temp_h,ds:[PC80]
+ B9CA  46		     1			inc	PC80
+ B9CB  FF E2		     1			jmp	temp
 
 				ED	0baH				;INDR
  = 00BB			     1		op2	= 0baH + 1
@@ -14941,7 +14943,7 @@ z80emv.asm						     Page 1 - 1
 
 						end	exe_start
 				  
-Microsoft (R) Macro Assembler Version 6.00AD    	    09/21/25 21:28:31
+Microsoft (R) Macro Assembler Version 6.00AD    	    09/21/25 22:45:37
 z80emv.asm						     Symbols 2 - 1
 
 
@@ -15068,12 +15070,12 @@ code_IO  . . . . . . . . . . . .	Number	 0004h
 code_OUT . . . . . . . . . . . .	Number	 0002h	 
 code_undef2  . . . . . . . . . .	Number	 0005h	 
 code_undef4  . . . . . . . . . .	Number	 0006h	 
-cpdr_end . . . . . . . . . . . .	L Near	 B9C7	  _TEXT	
+cpdr_end . . . . . . . . . . . .	L Near	 B9C1	  _TEXT	
 cpdr_loop  . . . . . . . . . . .	L Near	 B9A5	  _TEXT	
-cpdr_z . . . . . . . . . . . . .	L Near	 B9C0	  _TEXT	
-cpir_end . . . . . . . . . . . .	L Near	 B1C7	  _TEXT	
+cpdr_z . . . . . . . . . . . . .	L Near	 B9BA	  _TEXT	
+cpir_end . . . . . . . . . . . .	L Near	 B1C1	  _TEXT	
 cpir_loop  . . . . . . . . . . .	L Near	 B1A5	  _TEXT	
-cpir_z . . . . . . . . . . . . .	L Near	 B1C0	  _TEXT	
+cpir_z . . . . . . . . . . . . .	L Near	 B1BA	  _TEXT	
 entry_SP . . . . . . . . . . . .	Text   	 bp
 entry_c0 . . . . . . . . . . . .	L Near	 00C0	  _TEXT	
 entry  . . . . . . . . . . . . .	L Near	 00E0	  _TEXT	

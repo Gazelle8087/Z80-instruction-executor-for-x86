@@ -2986,7 +2986,7 @@ ED	67H				;RRD	****
 		and	temp_h,c_flag
 		or	ah,temp_h
 		mov	temp_l,0
-		jmp	no_op
+		fetch1
 
 ED	68H				;IN	L,(C)
 		IO
@@ -3017,7 +3017,7 @@ ED	6fH				;RLD	****
 		and	temp_h,c_flag
 		or	ah,temp_h
 		mov	temp_l,0
-		jmp	no_op
+		fetch1
 
 ED	70H				;IN	(C)
 		IO
@@ -3152,8 +3152,6 @@ cpir_loop:	cmp	A,[HL]
 		mov	temp_l,0
 		fetch1
 
-		org	0b1c0h
-
 cpir_z:		inc	HL
 		dec	BC
 		jz	short cpir_end
@@ -3201,8 +3199,6 @@ cpdr_loop:	cmp	A,[HL]
 		or	ah,temp_h
 		mov	temp_l,0
 		fetch1
-
-		org	0b9c0h
 
 cpdr_z:		dec	HL
 		dec	BC
