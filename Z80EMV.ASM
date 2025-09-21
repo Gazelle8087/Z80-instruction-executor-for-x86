@@ -47,6 +47,7 @@ temp	equ	dx
 ;;
 ;		return code : BP
 ;
+;		0	RETEM
 ;		1	HLT
 ;		2	OUT (n),A
 ;		3	IN  A,(n)
@@ -65,8 +66,8 @@ temp	equ	dx
 ;		H    : bh
 ;		L    : bl
 ;
-;		PC   : si
-;		SP   : di
+;		PC   : set vector #ff (000:03fcg)
+;		SP   : bp
 ;
 ;		BC' [00F0]
 ;		DE' [00F2]
