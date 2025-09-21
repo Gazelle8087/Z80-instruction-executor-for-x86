@@ -1,4 +1,4 @@
-Microsoft (R) Macro Assembler Version 6.00AD    	    09/21/25 18:21:55
+Microsoft (R) Macro Assembler Version 6.00AD    	    09/21/25 21:28:31
 z80emv.asm						     Page 1 - 1
 
 
@@ -49,7 +49,7 @@ z80emv.asm						     Page 1 - 1
 				;		SI have the address where the code here under was fetched.
 				;		BP have the return code corresponding to the code here under.
 				;;
-				;		return code : BP
+				;		return code : DI
 				;
 				;		0	RETEM
 				;		1	HLT
@@ -14941,7 +14941,7 @@ z80emv.asm						     Page 1 - 1
 
 						end	exe_start
 				  
-Microsoft (R) Macro Assembler Version 6.00AD    	    09/21/25 18:21:55
+Microsoft (R) Macro Assembler Version 6.00AD    	    09/21/25 21:28:31
 z80emv.asm						     Symbols 2 - 1
 
 

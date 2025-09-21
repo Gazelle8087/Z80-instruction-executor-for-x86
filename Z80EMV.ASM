@@ -45,7 +45,7 @@ temp	equ	dx
 ;		SI have the address where the code here under was fetched.
 ;		BP have the return code corresponding to the code here under.
 ;;
-;		return code : BP
+;		return code : DI
 ;
 ;		0	RETEM
 ;		1	HLT
