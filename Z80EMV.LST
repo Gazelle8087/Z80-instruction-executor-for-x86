@@ -1,8 +1,8 @@
-Microsoft (R) Macro Assembler Version 6.00AD    	    09/21/25 15:37:37
+Microsoft (R) Macro Assembler Version 6.00AD    	    09/21/25 18:13:04
 z80emv.asm						     Page 1 - 1
 
 
-				;	Z80 instruction executor for x86 Rev. 1.00
+				;	Z80 instruction executor for x86 Rev. 1.11
 				;
 				;	Copyright (C) 2025 by Gazelle
 				;
@@ -28,6 +28,8 @@ z80emv.asm						     Page 1 - 1
 				;OTHER DEALINGS IN THE SOFTWARE.
 
 				;2025/5/18 Rev. 1.00 Initial release
+				;2025/9/21 Rev. 1.10 8080 emulation mode implemented
+				;2025/9/21 Rev. 1.11 fix stack pointer issue
 
 						page 0,150
 						.model	small
@@ -174,12 +176,13 @@ z80emv.asm						     Page 1 - 1
 
 						org	0e0h
  00E0				entry:
- 00E0  8B EA					mov	save_temp,temp
- 00E2  FC					cld
- 00E3  8A 34					mov	temp_h,ds:[PC80]
- 00E5  B2 00					mov	temp_l,0
- 00E7  46					inc	PC80
- 00E8  FF E2					jmp	temp
+ 00E0  8B FD					mov	SP80,entry_SP
+ 00E2  8B EA					mov	save_temp,temp
+ 00E4  FC					cld
+ 00E5  8A 34					mov	temp_h,ds:[PC80]
+ 00E7  B2 00					mov	temp_l,0
+ 00E9  46					inc	PC80
+ 00EA  FF E2					jmp	temp
 
 				;======================================
 				fetch1		macro
@@ -1607,6 +1610,7 @@ z80emv.asm						     Page 1 - 1
  4F05  FF E2		     2			jmp	temp
 
 				M1	50H
+
  = 0051			     1		op2	= 50H + 1
 						LD	D,B
  5000  8B D5		     1			mov	temp,save_temp
@@ -1643,7 +1647,6 @@ z80emv.asm						     Page 1 - 1
  530A  46		     2			inc	PC80
  530B  FF E2		     2			jmp	temp
 				M1	54H
-
  = 0055			     1		op2	= 54H + 1
 						LD	D,H
  5400  8B D5		     1			mov	temp,save_temp
@@ -2441,7 +2444,6 @@ z80emv.asm						     Page 1 - 1
  9B17  46		     2			inc	PC80
  9B18  FF E2		     2			jmp	temp
 				M1	9CH
-
  = 009D			     1		op2	= 9CH + 1
 						SBC8	H
  9C00  9E		     1			sahf
@@ -2618,7 +2620,7 @@ z80emv.asm						     Page 1 - 1
  AA0D  FF E2		     2			jmp	temp
 				M1	0ABH
  = 00AC			     1		op2	= 0ABH + 1
-						XRA	E
+		XRA	E
  AB00  8B D5		     1			mov	temp,save_temp
  AB02  32 C2		     1			xor	A,E
  AB04  B2 00		     1			mov	temp_l,0
@@ -2846,7 +2848,6 @@ z80emv.asm						     Page 1 - 1
 				M1	0BFH
  = 00C0			     1		op2	= 0BFH + 1
 						CPA	A
-
  BF00  3A C0		     1			cmp	A,A
  BF02  9F		     1			lahf
  BF03  70 08		     1			jo	@f
@@ -4741,6 +4742,7 @@ z80emv.asm						     Page 1 - 1
  2D2A  46		     2			inc	PC80
  2D2B  FF E2		     2			jmp	temp
 				CB	2eH
+
  = 002F			     1		op2	= 2eH + 1
 						SRA	M
  2E20  D0 3F		     1			sar	M,1
@@ -5900,7 +5902,7 @@ z80emv.asm						     Page 1 - 1
  7F32  8A 34		     2			mov	temp_h,ds:[PC80]
  7F34  46		     2			inc	PC80
  7F35  FF E2		     2			jmp	temp
-				;--------------------------------------
+;--------------------------------------
 				CB	80H
  = 0081			     1		op2	= 80H + 1
 						RES	0,B
@@ -5937,7 +5939,7 @@ z80emv.asm						     Page 1 - 1
  8329  8A 34		     2			mov	temp_h,ds:[PC80]
  832B  46		     2			inc	PC80
  832C  FF E2		     2			jmp	temp
-CB	84H
+				CB	84H
  = 0085			     1		op2	= 84H + 1
 						RES	0,H
  8420  80 E7 FE		     1			and	H,not (1 shl 0)
@@ -14936,7 +14938,7 @@ CB	84H
 
 						end	exe_start
 				  
-Microsoft (R) Macro Assembler Version 6.00AD    	    09/21/25 15:37:37
+Microsoft (R) Macro Assembler Version 6.00AD    	    09/21/25 18:13:04
 z80emv.asm						     Symbols 2 - 1
 
 

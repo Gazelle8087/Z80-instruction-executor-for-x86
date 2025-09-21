@@ -1,4 +1,4 @@
-;	Z80 instruction executor for x86 Rev. 1.00
+;	Z80 instruction executor for x86 Rev. 1.11
 ;
 ;	Copyright (C) 2025 by Gazelle
 ;
@@ -24,6 +24,8 @@
 ;OTHER DEALINGS IN THE SOFTWARE.
 
 ;2025/5/18 Rev. 1.00 Initial release
+;2025/9/21 Rev. 1.10 8080 emulation mode implemented
+;2025/9/21 Rev. 1.11 fix stack pointer issue
 
 		page 0,150
 		.model	small
@@ -174,6 +176,7 @@ entry_c0:
 
 		org	0e0h
 entry:
+		mov	SP80,entry_SP
 		mov	save_temp,temp
 		cld
 		mov	temp_h,ds:[PC80]
