@@ -3217,7 +3217,6 @@ ED	0bbH				;OTDR
 ED	0edh				;CALLN
 		mov	temp,save_temp
 		mov	entry_SP,SP80
-		mov	ret_reg,code_EDFD
 		mov	temp_h,ds:[si]
 		inc	si
 		mov	cs:CALLN_vect,temp_h
